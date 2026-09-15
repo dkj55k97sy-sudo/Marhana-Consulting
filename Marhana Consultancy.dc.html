@@ -1706,8 +1706,25 @@ const BANDS = {
     body: 'On your answers there is at least one issue that typically ends in disqualification or a low score regardless of how well the response is written. The better decision is usually to close the gap and target the next comparable opportunity.' }
 };
 
+const PAGE_PATHS = {
+  home: '/', about: '/about', services: '/services', work: '/track-record',
+  insights: '/insights', faq: '/faq', contact: '/contact', pricing: '/pricing',
+  policies: '/policies', credentials: '/credentials', howwework: '/how-we-work',
+  privacy: '/privacy', terms: '/terms',
+  'insight-evaluation': '/insights/how-evaluators-mark-your-answer',
+  'insight-social-value': '/insights/social-value-commitments',
+  'insight-getting-started': '/insights/first-bid-checklist'
+};
+const PATH_PAGES = Object.fromEntries(Object.entries(PAGE_PATHS).map(([k, v]) => [v, k]));
+function pageFromLocation() {
+  try {
+    const path = window.location.pathname.replace(/\/$/, '') || '/';
+    return PATH_PAGES[path] || 'home';
+  } catch (e) { return 'home'; }
+}
+
 class Component extends DCLogic {
-  state = { page: 'home', sent: false, failed: false, menuOpen: false, showCookies: false, showCurtain: false, leaving: false, step: 0, answers: [null, null, null, null, null], checkDone: false, openService: null };
+  state = { page: pageFromLocation(), sent: false, failed: false, menuOpen: false, showCookies: false, showCurtain: false, leaving: false, step: 0, answers: [null, null, null, null, null], checkDone: false, openService: null };
   _cookieKey = 'marhana-cookie-consent';
   _setConsent(value) {
     try { window.localStorage.setItem(this._cookieKey, value); } catch (e) {}
@@ -1717,9 +1734,18 @@ class Component extends DCLogic {
     return this.props.enquiryEmail ?? 'info@marhanaconsulting.com';
   }
   go(page) {
-    return () => { this.setState({ page, menuOpen: false }); window.scrollTo({ top: 0 }); };
+    return () => {
+      this.setState({ page, menuOpen: false });
+      window.scrollTo({ top: 0 });
+      try {
+        const path = PAGE_PATHS[page] || '/';
+        if (window.location.pathname !== path) window.history.pushState({ page }, '', path);
+      } catch (e) {}
+    };
   }
   componentDidMount() {
+    this._onPopState = () => { this.setState({ page: pageFromLocation() }); };
+    window.addEventListener('popstate', this._onPopState);
     this._onScroll = () => {
       const y = window.scrollY || document.documentElement.scrollTop || 0;
       const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
@@ -1751,6 +1777,7 @@ class Component extends DCLogic {
   }
   componentWillUnmount() {
     window.removeEventListener('scroll', this._onScroll);
+    window.removeEventListener('popstate', this._onPopState);
     if (this._cookieTimer) window.clearTimeout(this._cookieTimer);
     if (this._io) this._io.disconnect();
   }
