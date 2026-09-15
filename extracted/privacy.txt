@@ -18,7 +18,7 @@ ICO registration
 [ICO REGISTRATION NUMBER]
 
 SECTION A — WHO WE ARE
-Marhana & Co Consulting Ltd is a company registered in England and Wales under company number [COMPANY REGISTRATION NUMBER], with its registered office at [REGISTERED OFFICE ADDRESS]. We provide public-sector bid and tender support services to small and medium-sized enterprises.
+Marhana & Co Consulting Ltd is a company registered in England and Wales under company number 17460766, with its registered office at [REGISTERED OFFICE ADDRESS]. We provide public-sector bid and tender support services to small and medium-sized enterprises.
 We are registered with the Information Commissioner's Office under registration number [ICO REGISTRATION NUMBER].
 For most of the activities described in this notice we are the data controller. In some circumstances we act as a processor on a client's behalf; Section G explains when.
 We have not appointed a Data Protection Officer, as we are not required to do so under Article 37 of the UK GDPR. Responsibility for data protection rests with [DATA PROTECTION LEAD NAME], [DATA PROTECTION LEAD ROLE], contactable at [DATA PROTECTION EMAIL].

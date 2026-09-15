@@ -43,7 +43,7 @@ Pricing principles (M7 §A): fixed fee per deliverable, written scope and exclus
 ⚠ The Schedule of Fees retainer table (Section C) still carries `[TIER 1/2/3 NAME]` and `£[FEE]` placeholders. The £400–£800 figure comes from the broker instructions, not the fee schedule. Confirm the three tier names and prices before the `/pricing` page is built.
 
 ## Open items
-- Company number and registered office address.
+- Registered office address confirmation.
 - Retainer tier names, prices and inclusion counts.
 - Cyber Essentials / APMP status wording for `/credentials`.
 - `/api/enquiry` route handler + Supabase table for enquiries.

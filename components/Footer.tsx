@@ -95,7 +95,7 @@ export default function Footer() {
                 Registered in England and Wales
               </dt>
               <dd className="mt-1 text-slate-300">
-                Company number {process.env.NEXT_PUBLIC_COMPANY_NUMBER ?? "[COMPANY NUMBER]"}
+                Company number {process.env.NEXT_PUBLIC_COMPANY_NUMBER ?? "17460766"}
               </dd>
             </div>
             <div>

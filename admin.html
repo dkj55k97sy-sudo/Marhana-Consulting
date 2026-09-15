@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marhana & Co — Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F5F1E8; --card:#FFFFFF; --card-line:#E9E1D0; --inset:#FBF8F1; --inset-line:#EFE8D8;
+    --teal-deep:#0C2C2A; --teal:#113C39; --teal-mid:#2E6A60;
+    --muted:#8A8375; --ink:#1E2422; --ink-sec:#5C6360;
+    --amber:#C4943C; --amber-text:#8A6A22; --rust:#9A4E36;
+    --line:#D9D1BF;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:'Libre Franklin',Helvetica,Arial,sans-serif;font-weight:300;}
+  h1,h2,h3{font-family:'Cormorant Garamond',Garamond,serif;font-weight:500;margin:0;}
+  .eyebrow{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500;}
+  a{color:var(--teal-mid);}
+  button{font-family:inherit;cursor:pointer;}
+  input,select,textarea{font-family:inherit;font-size:14px;padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);width:100%;}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--teal-mid);outline-offset:1px;}
+  .btn{background:var(--teal);color:var(--cream);border:none;border-radius:8px;padding:9px 16px;font-size:13px;font-weight:500;}
+  .btn:hover{background:var(--teal-deep);}
+  .btn:disabled{opacity:.5;cursor:default;}
+  .btn-outline{background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 15px;font-size:13px;}
+  .btn-outline:hover{border-color:var(--teal-mid);color:var(--teal-mid);}
+  .btn-quiet{background:none;border:none;color:var(--teal-mid);font-size:12.5px;padding:4px 6px;text-decoration:underline;}
+  .btn-danger{color:var(--rust);}
+  .pill{display:inline-block;border-radius:100px;padding:3px 11px;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;font-weight:500;}
+  .pill-teal{background:rgba(46,106,96,.12);color:var(--teal-mid);}
+  .pill-amber{background:rgba(196,148,60,.15);color:var(--amber-text);}
+  .pill-rust{background:rgba(154,78,54,.12);color:var(--rust);}
+  .pill-muted{background:var(--inset);color:var(--muted);border:1px solid var(--inset-line);}
+  .card{background:var(--card);border:1px solid var(--card-line);border-radius:14px;padding:20px;}
+  .inset{background:var(--inset);border:1px solid var(--inset-line);border-radius:12px;padding:14px;}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;}
+  label.f{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:4px;}
+  .toast{position:fixed;bottom:22px;right:22px;background:var(--teal-deep);color:var(--cream);padding:12px 18px;border-radius:10px;font-size:13px;z-index:50;box-shadow:0 12px 28px rgba(12,44,42,.25);opacity:0;transform:translateY(6px);transition:opacity .2s,transform .2s;pointer-events:none;}
+  .toast.show{opacity:1;transform:translateY(0);}
+  .err{color:var(--rust);font-size:13px;margin-top:8px;}
+
+  /* login */
+  #login-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;}
+  #login-screen .card{width:100%;max-width:360px;}
+
+  /* app shell */
+  #app{display:none;min-height:100vh;}
+  #app.on{display:flex;}
+  .sidebar{width:220px;flex:0 0 220px;background:var(--teal-deep);color:var(--cream);padding:22px 16px;display:flex;flex-direction:column;}
+  .sidebar .brand{font-family:'Cormorant Garamond',serif;font-size:20px;margin-bottom:26px;padding:0 6px;}
+  .sidebar .brand span{display:block;font-family:'Libre Franklin',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,234,.5);margin-top:2px;}
+  .nav-item{display:block;width:100%;text-align:left;background:none;border:none;color:rgba(247,243,234,.72);padding:10px 12px;border-radius:8px;font-size:13.5px;margin-bottom:2px;}
+  .nav-item:hover{background:rgba(247,243,234,.06);color:#fff;}
+  .nav-item.active{background:rgba(247,243,234,.1);color:#fff;}
+  .sidebar-foot{margin-top:auto;padding-top:16px;border-top:1px solid rgba(247,243,234,.12);font-size:12px;color:rgba(247,243,234,.55);}
+  .sidebar-foot .who{color:rgba(247,243,234,.85);margin-bottom:8px;}
+  main{flex:1;padding:28px 32px;max-width:1100px;}
+  .stat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 24px;}
+  .stat{background:var(--card);border:1px solid var(--card-line);border-radius:14px;padding:16px 18px;}
+  .stat .n{font-family:'Cormorant Garamond',serif;font-size:32px;line-height:1;}
+  .stat .l{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:6px;}
+
+  table{width:100%;border-collapse:collapse;}
+  th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:500;padding:8px 10px;border-bottom:1px solid var(--card-line);}
+  td{padding:10px;border-bottom:1px solid var(--inset-line);font-size:13.5px;vertical-align:middle;}
+  tr.client-row{cursor:pointer;}
+  tr.client-row:hover{background:var(--inset);}
+  .bar{height:6px;border-radius:100px;background:var(--inset-line);overflow:hidden;width:90px;}
+  .bar > i{display:block;height:100%;background:var(--teal-mid);}
+  .detail{background:var(--inset);border-top:1px solid var(--inset-line);border-bottom:1px solid var(--inset-line);padding:18px;}
+  .tabs{display:flex;gap:4px;margin-bottom:14px;flex-wrap:wrap;}
+  .tab{background:none;border:1px solid transparent;border-radius:100px;padding:6px 14px;font-size:12px;color:var(--ink-sec);}
+  .tab.active{background:#fff;border-color:var(--card-line);color:var(--ink);font-weight:500;}
+  .list-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--inset-line);}
+  .list-row:last-child{border-bottom:none;}
+  .empty{color:var(--muted);font-size:13px;padding:14px 0;}
+  .msg-thread{display:flex;flex-direction:column;gap:10px;max-height:420px;overflow-y:auto;padding:14px;background:#FDFBF6;border:1px solid var(--inset-line);border-radius:10px;}
+  .bubble{max-width:70%;padding:9px 13px;border-radius:12px;font-size:13.5px;}
+  .bubble.us{align-self:flex-end;background:var(--teal);color:var(--cream);}
+  .bubble.client{align-self:flex-start;background:#fff;border:1px solid var(--inset-line);}
+  .bubble .meta{font-size:10.5px;opacity:.65;margin-top:4px;}
+
+  @media (max-width: 860px){
+    #app.on{flex-direction:column;}
+    .sidebar{width:100%;flex:none;flex-direction:row;align-items:center;overflow-x:auto;padding:12px;}
+    .sidebar .brand{display:none;}
+    .sidebar-foot{margin-top:0;margin-left:auto;border:none;padding:0;white-space:nowrap;}
+    main{padding:18px;}
+    .stat-strip{grid-template-columns:1fr 1fr;}
+    .grid2,.grid3{grid-template-columns:1fr;}
+    table, thead, tbody, th, td, tr{display:block;}
+    thead{display:none;}
+    tr.client-row{border:1px solid var(--card-line);border-radius:10px;margin-bottom:8px;padding:6px 4px;}
+    td{border:none;padding:4px 10px;}
+  }
+</style>
+</head>
+<body>
+
+<div id="login-screen">
+  <div class="card">
+    <p class="eyebrow">Marhana &amp; Co</p>
+    <h1 style="font-size:26px;margin-bottom:4px;">Admin sign in</h1>
+    <p style="font-size:13px;color:var(--ink-sec);margin:0 0 18px;">Staff access only. Clients use the portal.</p>
+    <form id="login-form">
+      <label class="f">Email</label>
+      <input id="login-email" type="email" required autocomplete="username" style="margin-bottom:12px;">
+      <label class="f">Password</label>
+      <input id="login-password" type="password" required autocomplete="current-password" style="margin-bottom:16px;">
+      <button class="btn" type="submit" style="width:100%;">Sign in</button>
+      <div id="login-error" class="err"></div>
+    </form>
+  </div>
+</div>
+
+<div id="app">
+  <nav class="sidebar">
+    <div class="brand">Marhana &amp; Co<span>Admin console</span></div>
+    <button class="nav-item" data-tab="overview">Overview</button>
+    <button class="nav-item" data-tab="clients">Clients</button>
+    <button class="nav-item" data-tab="messages">Messages</button>
+    <div class="sidebar-foot">
+      <div class="who" id="who-am-i"></div>
+      <button class="nav-item" id="signout-btn" style="padding-left:0;">Sign out</button>
+    </div>
+  </nav>
+  <main id="main"></main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  var SUPABASE_URL = 'https://ikpsmsrpiwohuxcajvyp.supabase.co';
+  var SUPABASE_ANON_KEY = 'sb_publishable_e1_t1R3rm79_ngF0iDJpGA_-O3ASc2V';
+  var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  var STAGES = ['Kick-off','Storyboarding','Drafting','Quality Assurance','Client Sign-off','Submission'];
+  var STATUSES = ['Drafting','Awaiting Review','Client Sign-off','Submitted'];
+
+  var state = {
+    session: null,
+    profile: null,
+    tab: 'overview',
+    expandedClient: null,
+    clientTab: 'bids',
+    msgClientId: null,
+    msgBidId: '__general__',
+    clients: [], bids: [], tasks: [], checks: [], docs: [], quotes: [], invoices: [], messages: [], profiles: []
+  };
+
+  function $(sel, root){ return (root||document).querySelector(sel); }
+  function $all(sel, root){ return Array.prototype.slice.call((root||document).querySelectorAll(sel)); }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function toast(msg, isErr){
+    var t = $('#toast');
+    t.textContent = msg;
+    t.style.background = isErr ? 'var(--rust)' : 'var(--teal-deep)';
+    t.classList.add('show');
+    clearTimeout(t._h);
+    t._h = setTimeout(function(){ t.classList.remove('show'); }, 2600);
+  }
+  function fmtDate(d){
+    if(!d) return '—';
+    try { return new Date(d).toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric' }); }
+    catch(e){ return d; }
+  }
+
+  // ---------------------------------------------------------------
+  // Auth
+  // ---------------------------------------------------------------
+  function showLogin(){
+    $('#login-screen').style.display = 'flex';
+    $('#app').classList.remove('on');
+  }
+  function showApp(){
+    $('#login-screen').style.display = 'none';
+    $('#app').classList.add('on');
+  }
+
+  $('#login-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = $('#login-email').value.trim();
+    var password = $('#login-password').value;
+    var errEl = $('#login-error');
+    errEl.textContent = '';
+    var btn = e.target.querySelector('button');
+    btn.disabled = true;
+    sb.auth.signInWithPassword({ email: email, password: password }).then(function(res){
+      btn.disabled = false;
+      if (res.error) { errEl.textContent = res.error.message; return; }
+      afterSignIn(res.data.session);
+    });
+  });
+
+  $('#signout-btn').addEventListener('click', function(){
+    sb.auth.signOut().then(function(){ location.reload(); });
+  });
+
+  function afterSignIn(session){
+    state.session = session;
+    sb.from('profiles').select('*').eq('id', session.user.id).maybeSingle().then(function(res){
+      if (res.error || !res.data || !res.data.is_admin) {
+        sb.auth.signOut().then(function(){
+          $('#login-error').textContent = 'This account does not have admin access.';
+          showLogin();
+        });
+        return;
+      }
+      state.profile = res.data;
+      $('#who-am-i').textContent = res.data.full_name || session.user.email;
+      showApp();
+      loadAll();
+    });
+  }
+
+  sb.auth.getSession().then(function(res){
+    if (res.data.session) afterSignIn(res.data.session);
+    else showLogin();
+  });
+
+  // ---------------------------------------------------------------
+  // Data loading
+  // ---------------------------------------------------------------
+  function loadAll(){
+    return Promise.all([
+      sb.from('clients').select('*').order('created_at', { ascending: false }),
+      sb.from('bids').select('*').order('sort', { ascending: true }),
+      sb.from('tasks').select('*').order('sort', { ascending: true }),
+      sb.from('compliance_items').select('*').order('sort', { ascending: true }),
+      sb.from('documents').select('*').order('created_at', { ascending: false }),
+      sb.from('quotes').select('*').order('sort', { ascending: true }),
+      sb.from('invoices').select('*').order('sort', { ascending: true }),
+      sb.from('messages').select('*').order('created_at', { ascending: true }),
+      sb.from('profiles').select('*')
+    ]).then(function(res){
+      var names = ['clients','bids','tasks','checks','docs','quotes','invoices','messages','profiles'];
+      var failed = [];
+      res.forEach(function(r, i){
+        if (r.error) failed.push(names[i] + ': ' + r.error.message);
+        else state[names[i]] = r.data || [];
+      });
+      if (failed.length) toast('Could not load: ' + failed.join('; '), true);
+      render();
+    });
+  }
+
+  function byClient(list, clientId){
+    return list.filter(function(x){ return x.client_id === clientId; });
+  }
+
+  // ---------------------------------------------------------------
+  // Mutations (small helpers, all reload + toast)
+  // ---------------------------------------------------------------
+  function run(promise, okMsg){
+    return promise.then(function(res){
+      if (res.error) { toast(res.error.message, true); throw res.error; }
+      toast(okMsg);
+      return loadAll();
+    });
+  }
+
+  // ---------------------------------------------------------------
+  // Nav
+  // ---------------------------------------------------------------
+  $all('.nav-item[data-tab]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      state.tab = btn.getAttribute('data-tab');
+      render();
+    });
+  });
+
+  // ---------------------------------------------------------------
+  // Render root
+  // ---------------------------------------------------------------
+  function render(){
+    $all('.nav-item[data-tab]').forEach(function(b){
+      b.classList.toggle('active', b.getAttribute('data-tab') === state.tab);
+    });
+    var main = $('#main');
+    if (state.tab === 'overview') main.innerHTML = renderOverview();
+    else if (state.tab === 'clients') main.innerHTML = renderClients();
+    else if (state.tab === 'messages') main.innerHTML = renderMessages();
+    wireEvents();
+  }
+
+  // ---------------------------------------------------------------
+  // Overview
+  // ---------------------------------------------------------------
+  function renderOverview(){
+    var openBids = state.bids.filter(function(b){ return b.stage < 5; }).length;
+    var pendingQuotes = state.quotes.filter(function(q){ return !q.accepted; }).length;
+    return '' +
+      '<p class="eyebrow">Overview</p>' +
+      '<h1 style="font-size:30px;margin:4px 0 18px;">Good to see you</h1>' +
+      '<div class="stat-strip">' +
+        stat(state.clients.length, 'Clients') +
+        stat(openBids, 'Open bids') +
+        stat(pendingQuotes, 'Quotes awaiting accept') +
+        stat(state.docs.length, 'Documents on file') +
+      '</div>' +
+      '<div class="card"><h3 style="font-size:18px;margin-bottom:10px;">Recent bids</h3>' + renderBidsTable(state.bids.slice(0,8)) + '</div>';
+  }
+  function stat(n, l){
+    return '<div class="stat"><div class="n">'+n+'</div><div class="l">'+esc(l)+'</div></div>';
+  }
+  function renderBidsTable(bids){
+    if (!bids.length) return '<div class="empty">No bids yet.</div>';
+    var rows = bids.map(function(b){
+      var c = state.clients.find(function(x){ return x.id === b.client_id; });
+      return '<tr><td>'+esc(b.title)+'</td><td>'+esc(c?c.name:'—')+'</td>' +
+        '<td>'+pill(STAGES[b.stage]||('Stage '+b.stage), 'teal')+'</td>' +
+        '<td>'+esc(b.deadline||'—')+'</td><td>'+esc(b.value||'—')+'</td></tr>';
+    }).join('');
+    return '<table><thead><tr><th>Bid</th><th>Client</th><th>Stage</th><th>Deadline</th><th>Value</th></tr></thead><tbody>'+rows+'</tbody></table>';
+  }
+  function pill(text, kind){
+    return '<span class="pill pill-'+(kind||'muted')+'">'+esc(text)+'</span>';
+  }
+
+  // ---------------------------------------------------------------
+  // Clients
+  // ---------------------------------------------------------------
+  function renderClients(){
+    var rows = state.clients.map(function(c){
+      var bids = byClient(state.bids, c.id);
+      var open = bids.filter(function(b){ return b.stage < 5; }).length;
+      var docsN = byClient(state.docs, c.id).length;
+      var hasUser = state.profiles.some(function(p){ return p.client_id === c.id; });
+      var expanded = state.expandedClient === c.id;
+      var html = '<tr class="client-row" data-client="'+c.id+'">' +
+        '<td><strong>'+esc(c.name)+'</strong></td>' +
+        '<td>'+open+' open</td>' +
+        '<td>'+docsN+' files</td>' +
+        '<td>'+(hasUser ? pill('Portal linked','teal') : pill('No portal user','amber'))+'</td>' +
+        '<td>'+fmtDate(c.created_at)+'</td>' +
+        '<td><button class="btn-quiet" data-expand="'+c.id+'">'+(expanded?'Close':'Open')+'</button></td>' +
+        '</tr>';
+      if (expanded) {
+        html += '<tr><td colspan="6" style="padding:0;border:none;"><div class="detail">'+renderClientDetail(c)+'</div></td></tr>';
+      }
+      return html;
+    }).join('');
+
+    return '' +
+      '<p class="eyebrow">Accounts</p>' +
+      '<div class="row" style="justify-content:space-between;margin:4px 0 18px;">' +
+        '<h1 style="font-size:30px;">Clients</h1>' +
+        '<button class="btn" id="toggle-add-client">+ Add client</button>' +
+      '</div>' +
+      '<div class="card" id="add-client-card" style="display:none;margin-bottom:18px;">' +
+        '<div class="grid2" style="margin-bottom:12px;">' +
+          '<div><label class="f">Organisation name</label><input id="new-client-name" placeholder="Ashworth &amp; Vale Ltd"></div>' +
+        '</div>' +
+        '<div class="row"><button class="btn" id="save-client">Create client</button><button class="btn-outline" id="cancel-add-client">Cancel</button></div>' +
+      '</div>' +
+      '<div class="card" style="padding:0;overflow:hidden;">' +
+        (state.clients.length ?
+          '<table><thead><tr><th>Client</th><th>Bids</th><th>Documents</th><th>Portal access</th><th>Added</th><th></th></tr></thead><tbody>'+rows+'</tbody></table>'
+          : '<div class="empty" style="padding:20px;">No clients yet — add your first one above.</div>') +
+      '</div>';
+  }
+
+  function renderClientDetail(c){
+    var tabs = ['bids','tasks','checks','quotes','invoices','docs','access'];
+    var labels = { bids:'Bids', tasks:'Tasks', checks:'Compliance', quotes:'Quotes', invoices:'Invoices', docs:'Documents', access:'Portal access' };
+    var tabBtns = tabs.map(function(t){
+      return '<button class="tab'+(state.clientTab===t?' active':'')+'" data-ctab="'+t+'">'+labels[t]+'</button>';
+    }).join('');
+
+    var body = '';
+    if (state.clientTab === 'bids') body = renderBidsSection(c);
+    else if (state.clientTab === 'tasks') body = renderSimpleList(c, 'tasks', state.tasks, { label:true, due:true, done:true });
+    else if (state.clientTab === 'checks') body = renderSimpleList(c, 'checks', state.checks, { label:true, done:true });
+    else if (state.clientTab === 'quotes') body = renderQuotesSection(c);
+    else if (state.clientTab === 'invoices') body = renderInvoicesSection(c);
+    else if (state.clientTab === 'docs') body = renderDocsSection(c);
+    else if (state.clientTab === 'access') body = renderAccessSection(c);
+
+    return '<div class="tabs">'+tabBtns+'</div>' + body;
+  }
+
+  function renderBidsSection(c){
+    var bids = byClient(state.bids, c.id);
+    var rows = bids.map(function(b){
+      return '<div class="list-row"><div>' +
+        '<strong>'+esc(b.title)+'</strong> — '+esc(b.buyer||'—')+' <span style="color:var(--muted)">· '+esc(b.deadline||'no deadline')+' · '+esc(b.value||'—')+'</span>' +
+        '<div style="margin-top:4px;">' + pill(b.status||'Drafting','teal') + ' ' +
+          '<select data-bid-stage="'+b.id+'" style="width:auto;display:inline-block;padding:3px 8px;font-size:12px;margin-left:6px;">' +
+            STAGES.map(function(s,i){ return '<option value="'+i+'"'+(i===b.stage?' selected':'')+'>'+(i+1)+'. '+s+'</option>'; }).join('') +
+          '</select>' +
+        '</div></div>' +
+        '<button class="btn-quiet btn-danger" data-del-bid="'+b.id+'">Remove</button></div>';
+    }).join('');
+    return '<div class="inset" style="margin-bottom:14px;">' +
+        '<div class="grid3" style="margin-bottom:8px;">' +
+          '<div><label class="f">Title</label><input id="nb-title" placeholder="NHS Facilities Framework"></div>' +
+          '<div><label class="f">Buyer</label><input id="nb-buyer" placeholder="NHS SBS"></div>' +
+          '<div><label class="f">Deadline</label><input id="nb-deadline" placeholder="24 Aug 2026"></div>' +
+        '</div>' +
+        '<div class="grid3" style="margin-bottom:10px;">' +
+          '<div><label class="f">Value</label><input id="nb-value" placeholder="£1.4m / 4 yrs"></div>' +
+          '<div><label class="f">Status</label><select id="nb-status">'+STATUSES.map(function(s){return '<option>'+s+'</option>';}).join('')+'</select></div>' +
+          '<div><label class="f">Stage</label><select id="nb-stage">'+STAGES.map(function(s,i){return '<option value="'+i+'">'+(i+1)+'. '+s+'</option>';}).join('')+'</select></div>' +
+        '</div>' +
+        '<button class="btn" data-add-bid="'+c.id+'">Add bid</button>' +
+      '</div>' +
+      (rows || '<div class="empty">No bids for this client yet.</div>');
+  }
+
+  function renderSimpleList(c, kind, all, opts){
+    var rows = byClient(all, c.id);
+    var table = kind === 'tasks' ? 'tasks' : 'compliance_items';
+    var items = rows.map(function(r){
+      return '<div class="list-row">' +
+        '<label style="display:flex;align-items:center;gap:8px;flex:1;">' +
+          '<input type="checkbox" data-toggle="'+table+':'+r.id+'" '+(r.done?'checked':'')+' style="width:auto;">' +
+          '<span style="'+(r.done?'text-decoration:line-through;color:var(--muted);':'')+'">'+esc(r.label)+'</span>' +
+          (opts.due && r.due ? ' <span style="color:var(--muted);font-size:12px;margin-left:6px;">'+esc(r.due)+'</span>' : '') +
+        '</label>' +
+        '<button class="btn-quiet btn-danger" data-del="'+table+':'+r.id+'">Remove</button></div>';
+    }).join('');
+    return '<div class="inset" style="margin-bottom:14px;">' +
+        '<div class="row">' +
+          '<input id="new-item-label" placeholder="'+(kind==='tasks'?'Upload updated H&amp;S policy':'Employer\'s liability insurance')+'" style="flex:1;">' +
+          (opts.due ? '<input id="new-item-due" placeholder="Due 20 Aug" style="max-width:160px;">' : '') +
+          '<button class="btn" data-add-item="'+table+':'+c.id+'">Add</button>' +
+        '</div>' +
+      '</div>' +
+      (items || '<div class="empty">Nothing here yet.</div>');
+  }
+
+  function renderQuotesSection(c){
+    var rows = byClient(state.quotes, c.id).map(function(q){
+      return '<div class="list-row"><div>' +
+          '<strong>'+esc(q.title)+'</strong> — '+esc(q.amount||'—') +
+          (q.detail ? '<div style="color:var(--muted);font-size:12px;">'+esc(q.detail)+'</div>' : '') +
+        '</div>' +
+        '<div class="row">' +
+          (q.accepted ? pill('Accepted','teal') :
+            '<button class="btn-outline" data-accept-quote="'+q.id+'">Mark accepted</button>') +
+          '<button class="btn-quiet btn-danger" data-del="quotes:'+q.id+'">Remove</button>' +
+        '</div></div>';
+    }).join('');
+    return '<div class="inset" style="margin-bottom:14px;">' +
+        '<div class="grid3">' +
+          '<div><label class="f">Title</label><input id="nq-title" placeholder="Full bid management"></div>' +
+          '<div><label class="f">Detail</label><input id="nq-detail" placeholder="Drafting, QA and submission"></div>' +
+          '<div><label class="f">Amount</label><input id="nq-amount" placeholder="£4,800"></div>' +
+        '</div>' +
+        '<button class="btn" style="margin-top:10px;" data-add-quote="'+c.id+'">Add quote</button>' +
+      '</div>' +
+      (rows || '<div class="empty">No quotes yet.</div>');
+  }
+
+  function renderInvoicesSection(c){
+    var rows = byClient(state.invoices, c.id).map(function(i){
+      return '<div class="list-row"><div><strong>'+esc(i.ref)+'</strong> — '+esc(i.amount||'—')+' <span style="color:var(--muted)">· issued '+esc(i.issued||'—')+'</span></div>' +
+        '<div class="row">'+pill(i.status||'Due', i.status==='Paid'?'teal':'amber')+
+          '<button class="btn-quiet btn-danger" data-del="invoices:'+i.id+'">Remove</button></div></div>';
+    }).join('');
+    return '<div class="inset" style="margin-bottom:14px;">' +
+        '<div class="grid3">' +
+          '<div><label class="f">Reference</label><input id="ni-ref" placeholder="INV-0042"></div>' +
+          '<div><label class="f">Issued</label><input id="ni-issued" placeholder="1 Sep 2026"></div>' +
+          '<div><label class="f">Amount</label><input id="ni-amount" placeholder="£4,800"></div>' +
+        '</div>' +
+        '<div class="row" style="margin-top:10px;">' +
+          '<select id="ni-status" style="max-width:160px;"><option>Due</option><option>Paid</option><option>Overdue</option></select>' +
+          '<button class="btn" data-add-invoice="'+c.id+'">Add invoice</button>' +
+        '</div>' +
+      '</div>' +
+      (rows || '<div class="empty">No invoices yet.</div>');
+  }
+
+  function renderDocsSection(c){
+    var rows = byClient(state.docs, c.id).map(function(d){
+      return '<div class="list-row"><div><strong>'+esc(d.name)+'</strong> ' +
+          '<span style="color:var(--muted);font-size:12px;">· '+esc(d.folder||'—')+' · '+esc(d.size_label||'')+'</span>' +
+          '<div style="color:var(--muted);font-size:11.5px;">'+fmtDate(d.created_at)+'</div></div>' +
+        '<button class="btn-quiet btn-danger" data-del="documents:'+d.id+'">Remove</button></div>';
+    }).join('');
+    return '<div class="inset" style="margin-bottom:14px;">' +
+        '<p style="font-size:12.5px;color:var(--ink-sec);margin:0 0 8px;">Log a document received by email, or any file the client uploads shows here automatically.</p>' +
+        '<div class="grid3">' +
+          '<div><label class="f">Name</label><input id="nd-name" placeholder="Health &amp; Safety Policy.pdf"></div>' +
+          '<div><label class="f">Folder</label><input id="nd-folder" placeholder="Company Policies" value="Company Policies"></div>' +
+          '<div><label class="f">Note</label><input id="nd-size" placeholder="Received by email"></div>' +
+        '</div>' +
+        '<button class="btn" style="margin-top:10px;" data-add-doc="'+c.id+'">Log document</button>' +
+      '</div>' +
+      (rows || '<div class="empty">No documents on file yet.</div>');
+  }
+
+  function renderAccessSection(c){
+    var profile = state.profiles.find(function(p){ return p.client_id === c.id; });
+    var info;
+    if (profile) {
+      info = '<div class="inset">Portal user: <strong>'+esc(profile.full_name||'—')+'</strong> ' + pill('Linked','teal') + '</div>';
+    } else {
+      info = '' +
+        '<div class="inset" style="margin-bottom:14px;">' +
+          '<p style="font-size:12.5px;color:var(--ink-sec);margin:0 0 10px;">' +
+            'No portal user yet. In Supabase go to <strong>Authentication → Users → Invite user</strong> ' +
+            'with this client\'s email, copy the new user\'s id, then link it below.' +
+          '</p>' +
+          '<div class="grid2">' +
+            '<div><label class="f">Auth user id</label><input id="na-uid" placeholder="00000000-0000-0000-0000-000000000000"></div>' +
+            '<div><label class="f">Contact name</label><input id="na-name" placeholder="Alan Vale"></div>' +
+          '</div>' +
+          '<button class="btn" style="margin-top:10px;" data-link-user="'+c.id+'">Link portal user</button>' +
+        '</div>';
+    }
+    return info +
+      '<div class="inset" style="margin-top:14px;">' +
+        '<label class="f">Rename client</label>' +
+        '<div class="row"><input id="rename-client" value="'+esc(c.name)+'"><button class="btn-outline" data-rename="'+c.id+'">Save</button>' +
+        '<button class="btn-outline btn-danger" data-delete-client="'+c.id+'">Delete client</button></div>' +
+      '</div>';
+  }
+
+  // ---------------------------------------------------------------
+  // Messages
+  // ---------------------------------------------------------------
+  function renderMessages(){
+    if (!state.clients.length) {
+      return '<p class="eyebrow">Comms</p><h1 style="font-size:30px;margin:4px 0 18px;">Messages</h1><div class="empty">Add a client first.</div>';
+    }
+    if (!state.msgClientId) state.msgClientId = state.clients[0].id;
+    var clientBids = byClient(state.bids, state.msgClientId);
+    var options = '<option value="__general__"'+(state.msgBidId==='__general__'?' selected':'')+'>General</option>' +
+      clientBids.map(function(b){ return '<option value="'+b.id+'"'+(state.msgBidId===b.id?' selected':'')+'>'+esc(b.title)+'</option>'; }).join('');
+
+    var bidId = state.msgBidId === '__general__' ? null : state.msgBidId;
+    var thread = state.messages.filter(function(m){
+      return m.client_id === state.msgClientId && (m.bid_id || null) === bidId;
+    });
+    var bubbles = thread.map(function(m){
+      return '<div class="bubble '+(m.from_client?'client':'us')+'">' + esc(m.body) +
+        '<div class="meta">'+esc(m.author || (m.from_client ? 'Client' : 'Us'))+' · '+fmtDate(m.created_at)+'</div></div>';
+    }).join('') || '<div class="empty">No messages in this thread yet.</div>';
+
+    return '' +
+      '<p class="eyebrow">Comms</p>' +
+      '<h1 style="font-size:30px;margin:4px 0 18px;">Messages</h1>' +
+      '<div class="row" style="margin-bottom:14px;">' +
+        '<select id="msg-client" style="max-width:260px;">' +
+          state.clients.map(function(c){ return '<option value="'+c.id+'"'+(c.id===state.msgClientId?' selected':'')+'>'+esc(c.name)+'</option>'; }).join('') +
+        '</select>' +
+        '<select id="msg-bid" style="max-width:260px;">'+options+'</select>' +
+      '</div>' +
+      '<div class="msg-thread" id="msg-thread">'+bubbles+'</div>' +
+      '<div class="row" style="margin-top:12px;">' +
+        '<textarea id="msg-body" rows="2" placeholder="Write a reply…" style="flex:1;"></textarea>' +
+        '<button class="btn" id="msg-send">Send</button>' +
+      '</div>';
+  }
+
+  // ---------------------------------------------------------------
+  // Event wiring (re-run after every render)
+  // ---------------------------------------------------------------
+  function wireEvents(){
+    // clients
+    var addCard = $('#add-client-card');
+    var toggleAdd = $('#toggle-add-client');
+    if (toggleAdd) toggleAdd.addEventListener('click', function(){ addCard.style.display = addCard.style.display === 'none' ? 'block' : 'none'; });
+    var cancelAdd = $('#cancel-add-client');
+    if (cancelAdd) cancelAdd.addEventListener('click', function(){ addCard.style.display = 'none'; });
+    var saveClient = $('#save-client');
+    if (saveClient) saveClient.addEventListener('click', function(){
+      var name = $('#new-client-name').value.trim();
+      if (!name) return toast('Enter a name', true);
+      run(sb.from('clients').insert({ name: name }), 'Client added');
+    });
+
+    $all('[data-expand]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var id = el.getAttribute('data-expand');
+        state.expandedClient = state.expandedClient === id ? null : id;
+        state.clientTab = 'bids';
+        render();
+      });
+    });
+    $all('tr.client-row').forEach(function(el){
+      el.addEventListener('click', function(e){
+        if (e.target.closest('button')) return;
+        var id = el.getAttribute('data-client');
+        state.expandedClient = state.expandedClient === id ? null : id;
+        state.clientTab = 'bids';
+        render();
+      });
+    });
+    $all('[data-ctab]').forEach(function(el){
+      el.addEventListener('click', function(){ state.clientTab = el.getAttribute('data-ctab'); render(); });
+    });
+
+    // bids
+    $all('[data-add-bid]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var clientId = el.getAttribute('data-add-bid');
+        var title = $('#nb-title').value.trim();
+        if (!title) return toast('Enter a bid title', true);
+        run(sb.from('bids').insert({
+          client_id: clientId, title: title,
+          buyer: $('#nb-buyer').value.trim(), deadline: $('#nb-deadline').value.trim(),
+          value: $('#nb-value').value.trim(), status: $('#nb-status').value,
+          stage: parseInt($('#nb-stage').value, 10), sort: state.bids.length
+        }), 'Bid added');
+      });
+    });
+    $all('[data-bid-stage]').forEach(function(el){
+      el.addEventListener('change', function(){
+        run(sb.from('bids').update({ stage: parseInt(el.value, 10) }).eq('id', el.getAttribute('data-bid-stage')), 'Stage updated');
+      });
+    });
+    $all('[data-del-bid]').forEach(function(el){
+      el.addEventListener('click', function(){
+        if (!confirm('Remove this bid?')) return;
+        run(sb.from('bids').delete().eq('id', el.getAttribute('data-del-bid')), 'Bid removed');
+      });
+    });
+
+    // tasks / compliance
+    $all('[data-add-item]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var parts = el.getAttribute('data-add-item').split(':');
+        var table = parts[0], clientId = parts[1];
+        var label = $('#new-item-label').value.trim();
+        if (!label) return toast('Enter a description', true);
+        var row = { client_id: clientId, label: label, sort: state[table === 'tasks' ? 'tasks' : 'checks'].length };
+        var dueEl = $('#new-item-due');
+        if (dueEl) row.due = dueEl.value.trim();
+        run(sb.from(table).insert(row), 'Added');
+      });
+    });
+    $all('[data-toggle]').forEach(function(el){
+      el.addEventListener('change', function(){
+        var parts = el.getAttribute('data-toggle').split(':');
+        run(sb.from(parts[0]).update({ done: el.checked }).eq('id', parts[1]), 'Updated');
+      });
+    });
+    $all('[data-del]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var parts = el.getAttribute('data-del').split(':');
+        if (!confirm('Remove this?')) return;
+        run(sb.from(parts[0]).delete().eq('id', parts[1]), 'Removed');
+      });
+    });
+
+    // quotes
+    $all('[data-add-quote]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var clientId = el.getAttribute('data-add-quote');
+        var title = $('#nq-title').value.trim();
+        if (!title) return toast('Enter a title', true);
+        run(sb.from('quotes').insert({
+          client_id: clientId, title: title, detail: $('#nq-detail').value.trim(),
+          amount: $('#nq-amount').value.trim(), sort: state.quotes.length
+        }), 'Quote added');
+      });
+    });
+    $all('[data-accept-quote]').forEach(function(el){
+      el.addEventListener('click', function(){
+        run(sb.from('quotes').update({ accepted: true, accepted_at: new Date().toISOString() }).eq('id', el.getAttribute('data-accept-quote')), 'Marked accepted');
+      });
+    });
+
+    // invoices
+    $all('[data-add-invoice]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var clientId = el.getAttribute('data-add-invoice');
+        var ref = $('#ni-ref').value.trim();
+        if (!ref) return toast('Enter a reference', true);
+        run(sb.from('invoices').insert({
+          client_id: clientId, ref: ref, issued: $('#ni-issued').value.trim(),
+          amount: $('#ni-amount').value.trim(), status: $('#ni-status').value, sort: state.invoices.length
+        }), 'Invoice added');
+      });
+    });
+
+    // documents
+    $all('[data-add-doc]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var clientId = el.getAttribute('data-add-doc');
+        var name = $('#nd-name').value.trim();
+        if (!name) return toast('Enter a document name', true);
+        run(sb.from('documents').insert({
+          client_id: clientId, name: name,
+          folder: $('#nd-folder').value.trim() || 'Company Policies',
+          size_label: $('#nd-size').value.trim()
+        }), 'Document logged');
+      });
+    });
+
+    // portal access
+    $all('[data-link-user]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var clientId = el.getAttribute('data-link-user');
+        var uid = $('#na-uid').value.trim();
+        var name = $('#na-name').value.trim();
+        if (!uid) return toast('Paste the auth user id', true);
+        run(sb.from('profiles').insert({ id: uid, client_id: clientId, full_name: name || null }), 'Portal user linked');
+      });
+    });
+    $all('[data-rename]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var val = $('#rename-client').value.trim();
+        if (!val) return toast('Name cannot be empty', true);
+        run(sb.from('clients').update({ name: val }).eq('id', el.getAttribute('data-rename')), 'Client renamed');
+      });
+    });
+    $all('[data-delete-client]').forEach(function(el){
+      el.addEventListener('click', function(){
+        if (!confirm('Delete this client and all their data? This cannot be undone.')) return;
+        state.expandedClient = null;
+        run(sb.from('clients').delete().eq('id', el.getAttribute('data-delete-client')), 'Client deleted');
+      });
+    });
+
+    // messages
+    var msgClientSel = $('#msg-client');
+    if (msgClientSel) msgClientSel.addEventListener('change', function(){
+      state.msgClientId = msgClientSel.value; state.msgBidId = '__general__'; render();
+    });
+    var msgBidSel = $('#msg-bid');
+    if (msgBidSel) msgBidSel.addEventListener('change', function(){ state.msgBidId = msgBidSel.value; render(); });
+    var sendBtn = $('#msg-send');
+    if (sendBtn) sendBtn.addEventListener('click', function(){
+      var body = $('#msg-body').value.trim();
+      if (!body) return;
+      var bidId = state.msgBidId === '__general__' ? null : state.msgBidId;
+      var author = (state.profile && state.profile.full_name) || (state.session && state.session.user.email) || 'Us';
+      run(sb.from('messages').insert({
+        client_id: state.msgClientId, bid_id: bidId, body: body, from_client: false, author: author
+      }), 'Message sent');
+    });
+    var thread = $('#msg-thread');
+    if (thread) thread.scrollTop = thread.scrollHeight;
+  }
+})();
+</script>
+</body>
+</html>
