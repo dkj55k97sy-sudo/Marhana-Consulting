@@ -52,20 +52,47 @@
   /* app shell */
   #app{display:none;min-height:100vh;}
   #app.on{display:flex;}
-  .sidebar{width:220px;flex:0 0 220px;background:var(--teal-deep);color:var(--cream);padding:22px 16px;display:flex;flex-direction:column;}
-  .sidebar .brand{font-family:'Cormorant Garamond',serif;font-size:20px;margin-bottom:26px;padding:0 6px;}
-  .sidebar .brand span{display:block;font-family:'Libre Franklin',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,234,.5);margin-top:2px;}
-  .nav-item{display:block;width:100%;text-align:left;background:none;border:none;color:rgba(247,243,234,.72);padding:10px 12px;border-radius:8px;font-size:13.5px;margin-bottom:2px;}
+  .sidebar{width:240px;flex:0 0 240px;background:var(--teal-deep);color:var(--cream);padding:24px 16px;display:flex;flex-direction:column;}
+  .sidebar .brand{display:flex;align-items:center;gap:11px;margin-bottom:30px;padding:0 6px;}
+  .sidebar .brand img{height:34px;width:auto;flex:0 0 auto;}
+  .sidebar .brand .t1{font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1.2;}
+  .sidebar .brand .t2{font-family:'Libre Franklin',sans-serif;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(247,243,234,.5);}
+  .nav-item{display:flex;align-items:center;gap:11px;width:100%;text-align:left;background:none;border:none;color:rgba(247,243,234,.72);padding:10px 12px;border-radius:8px;font-size:13.5px;margin-bottom:2px;}
+  .nav-item svg{flex:0 0 auto;opacity:.85;}
   .nav-item:hover{background:rgba(247,243,234,.06);color:#fff;}
-  .nav-item.active{background:rgba(247,243,234,.1);color:#fff;}
-  .unread-badge{display:inline-block;min-width:18px;padding:1px 6px;margin-left:8px;border-radius:100px;background:var(--rust);color:#fff;font-size:11px;text-align:center;line-height:16px;vertical-align:middle;}
-  .sidebar-foot{margin-top:auto;padding-top:16px;border-top:1px solid rgba(247,243,234,.12);font-size:12px;color:rgba(247,243,234,.55);}
-  .sidebar-foot .who{color:rgba(247,243,234,.85);margin-bottom:8px;}
-  main{flex:1;padding:28px 32px;max-width:1100px;}
+  .nav-item.active{background:rgba(247,243,234,.1);color:#fff;box-shadow:inset 3px 0 0 #9CBDB2;}
+  .unread-badge{display:inline-block;min-width:18px;margin-left:auto;padding:1px 6px;border-radius:100px;background:var(--rust);color:#fff;font-size:11px;text-align:center;line-height:16px;}
+  .sidebar-foot{margin-top:auto;padding-top:14px;border-top:1px solid rgba(247,243,234,.12);}
+  .user-card{display:flex;align-items:center;gap:11px;padding:10px;border-radius:10px;background:rgba(247,243,234,.05);margin-bottom:8px;}
+  .avatar{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:var(--teal-mid);color:#F7F3EA;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:16px;}
+  .user-card .meta{min-width:0;line-height:1.3;}
+  .user-card .who{font-size:13px;color:#F7F3EA;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .user-card .status{font-size:10.5px;color:rgba(247,243,234,.5);}
+  main{flex:1;padding:28px 32px;max-width:1160px;}
   .stat-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:18px 0 24px;}
   .stat{background:var(--card);border:1px solid var(--card-line);border-radius:14px;padding:16px 18px;}
   .stat .n{font-family:'Cormorant Garamond',serif;font-size:32px;line-height:1;}
   .stat .l{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:6px;}
+  .ov-two{display:grid;grid-template-columns:1.4fr 1fr;gap:18px;}
+  .needs-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 0;border-top:1px solid var(--inset-line);font-size:13.5px;}
+  .needs-row:first-child{border-top:none;}
+  .stage-row{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:13px;}
+  .stage-row .lbl{flex:0 0 128px;color:var(--ink-sec);}
+  .stage-row .bar{flex:1;}
+  .stage-row .n{flex:0 0 22px;text-align:right;color:var(--ink);}
+  .activity-row{padding:11px 0;border-top:1px solid var(--inset-line);font-size:13px;}
+  .activity-row:first-child{border-top:none;}
+  .activity-row .who{color:var(--teal);font-weight:500;}
+  .activity-row .when{color:var(--muted);font-size:11.5px;margin-top:2px;}
+  .board{display:grid;grid-auto-flow:column;grid-auto-columns:250px;gap:14px;overflow-x:auto;padding-bottom:8px;}
+  .board-col{background:var(--inset);border:1px solid var(--inset-line);border-radius:12px;padding:12px;min-height:80px;}
+  .board-col h4{font-size:13px;color:var(--teal);margin-bottom:2px;}
+  .board-col .cnt{font-size:11px;color:var(--muted);margin-bottom:10px;}
+  .board-card{background:#fff;border:1px solid var(--card-line);border-radius:10px;padding:12px;margin-bottom:10px;font-size:12.5px;}
+  .board-card .t{font-weight:500;color:var(--ink);margin-bottom:3px;}
+  .board-card .c{color:var(--muted);font-size:11.5px;margin-bottom:8px;}
+  .board-card .row{gap:6px;}
+  .board-card button{font-size:11px;padding:5px 9px;}
 
   table{width:100%;border-collapse:collapse;}
   th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:500;padding:8px 10px;border-bottom:1px solid var(--card-line);}
@@ -91,9 +118,13 @@
     #app.on{flex-direction:column;}
     .sidebar{width:100%;flex:none;flex-direction:row;align-items:center;overflow-x:auto;padding:12px;}
     .sidebar .brand{display:none;}
-    .sidebar-foot{margin-top:0;margin-left:auto;border:none;padding:0;white-space:nowrap;}
+    .nav-item{white-space:nowrap;}
+    .sidebar-foot{margin-top:0;margin-left:auto;border:none;padding:0;white-space:nowrap;display:flex;align-items:center;}
+    .user-card{margin-bottom:0;padding:6px;background:none;}
+    .user-card .meta{display:none;}
     main{padding:18px;}
     .stat-strip{grid-template-columns:1fr 1fr;}
+    .ov-two{grid-template-columns:1fr;}
     .grid2,.grid3{grid-template-columns:1fr;}
     table, thead, tbody, th, td, tr{display:block;}
     thead{display:none;}
@@ -122,13 +153,42 @@
 
 <div id="app">
   <nav class="sidebar">
-    <div class="brand">Marhana &amp; Co<span>Admin console</span></div>
-    <button class="nav-item" data-tab="overview">Overview</button>
-    <button class="nav-item" data-tab="clients">Clients</button>
-    <button class="nav-item" data-tab="messages">Messages<span class="unread-badge" id="unread-badge" hidden>0</span></button>
+    <div class="brand">
+      <img src="logo-mark-t.png" alt="Marhana &amp; Co">
+      <div><div class="t1">Marhana &amp; Co</div><div class="t2">Admin console</div></div>
+    </div>
+    <button class="nav-item" data-tab="overview">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+      Overview
+    </button>
+    <button class="nav-item" data-tab="clients">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3.4"></circle><path d="M3 20c0-3.6 2.7-6 6-6s6 2.4 6 6"></path><circle cx="17" cy="9" r="2.6"></circle><path d="M15.5 14.2c2.6.3 4.5 2.4 4.5 5.8"></path></svg>
+      Clients
+    </button>
+    <button class="nav-item" data-tab="bids">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"></path><circle cx="7" cy="6" r="1.3" fill="currentColor" stroke="none"></circle><circle cx="13" cy="12" r="1.3" fill="currentColor" stroke="none"></circle><circle cx="9" cy="18" r="1.3" fill="currentColor" stroke="none"></circle></svg>
+      Bids
+    </button>
+    <button class="nav-item" data-tab="documents">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h9l3 3h4v13H4z"></path></svg>
+      Documents
+    </button>
+    <button class="nav-item" data-tab="messages">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v11H9l-4 3z"></path></svg>
+      Messages<span class="unread-badge" id="unread-badge" hidden>0</span>
+    </button>
     <div class="sidebar-foot">
-      <div class="who" id="who-am-i"></div>
-      <button class="nav-item" id="signout-btn" style="padding-left:0;">Sign out</button>
+      <div class="user-card">
+        <div class="avatar" id="who-avatar"></div>
+        <div class="meta">
+          <div class="who" id="who-am-i"></div>
+          <div class="status">Signed in</div>
+        </div>
+      </div>
+      <button class="nav-item" id="signout-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><path d="M16 17l5-5-5-5"></path><path d="M21 12H9"></path></svg>
+        Sign out
+      </button>
     </div>
   </nav>
   <main id="main"></main>
@@ -218,7 +278,9 @@
         return;
       }
       state.profile = res.data;
-      $('#who-am-i').textContent = res.data.full_name || session.user.email;
+      var displayName = res.data.full_name || session.user.email;
+      $('#who-am-i').textContent = displayName;
+      $('#who-avatar').textContent = displayName.split(/\s+/).filter(Boolean).slice(0, 2).map(function(w){ return w[0].toUpperCase(); }).join('') || 'A';
       showApp();
       loadAll();
     });
@@ -312,6 +374,8 @@
     var main = $('#main');
     if (state.tab === 'overview') main.innerHTML = renderOverview();
     else if (state.tab === 'clients') main.innerHTML = renderClients();
+    else if (state.tab === 'bids') main.innerHTML = renderBidsBoard();
+    else if (state.tab === 'documents') main.innerHTML = renderDocumentsAll();
     else if (state.tab === 'messages') main.innerHTML = renderMessages();
     wireEvents();
   }
@@ -319,36 +383,151 @@
   // ---------------------------------------------------------------
   // Overview
   // ---------------------------------------------------------------
+  function clientName(id){
+    var c = state.clients.find(function(x){ return x.id === id; });
+    return c ? c.name : '—';
+  }
+  function parseDeadline(text){
+    if (!text) return null;
+    var d = new Date(text);
+    return isNaN(d.getTime()) ? null : d;
+  }
+  function daysUntil(text){
+    var d = parseDeadline(text);
+    if (!d) return null;
+    return Math.ceil((d - new Date()) / 86400000);
+  }
+  function relTime(iso){
+    if (!iso) return '';
+    var ms = Date.now() - new Date(iso).getTime();
+    var mins = Math.round(ms / 60000);
+    if (mins < 1) return 'just now';
+    if (mins < 60) return mins + 'm ago';
+    var hrs = Math.round(mins / 60);
+    if (hrs < 24) return hrs + 'h ago';
+    var days = Math.round(hrs / 24);
+    return days + 'd ago';
+  }
+
   function renderOverview(){
-    var openBids = state.bids.filter(function(b){ return b.stage < 5; }).length;
-    var pendingQuotes = state.quotes.filter(function(q){ return !q.accepted; }).length;
+    var openBids = state.bids.filter(function(b){ return b.stage < 5; });
+    var pendingQuotes = state.quotes.filter(function(q){ return !q.accepted; });
+    var dueSoon = openBids.filter(function(b){ var d = daysUntil(b.deadline); return d !== null && d <= 14; });
+    var noPortal = state.clients.filter(function(c){ return !state.profiles.some(function(p){ return p.client_id === c.id; }); });
+    var today = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+
+    var needs = [];
+    state.clients.forEach(function(c){
+      var n = unreadForClient(c.id);
+      if (n) needs.push({ label: (c.name) + ' sent ' + n + ' new message' + (n > 1 ? 's' : ''), action: 'View', tab: 'messages', clientId: c.id });
+    });
+    pendingQuotes.forEach(function(q){
+      needs.push({ label: clientName(q.client_id) + ' — quote "' + q.title + '" awaiting accept', action: 'View', tab: 'clients', clientId: q.client_id });
+    });
+    dueSoon.forEach(function(b){
+      var d = daysUntil(b.deadline);
+      needs.push({ label: clientName(b.client_id) + ' — "' + b.title + '" due ' + (d <= 0 ? 'today/overdue' : 'in ' + d + ' day' + (d === 1 ? '' : 's')), action: 'View', tab: 'bids', clientId: b.client_id });
+    });
+    noPortal.forEach(function(c){
+      needs.push({ label: c.name + ' has no portal login yet', action: 'View', tab: 'clients', clientId: c.id });
+    });
+
+    var needsHtml = needs.length
+      ? needs.slice(0, 8).map(function(n){
+          return '<div class="needs-row"><span>'+esc(n.label)+'</span><button class="btn-quiet" data-goto-client="'+n.tab+':'+n.clientId+'">'+n.action+' →</button></div>';
+        }).join('')
+      : '<div class="empty">Nothing needs you today.</div>';
+
+    var stageHtml = STAGES.map(function(s, i){
+      var n = state.bids.filter(function(b){ return b.stage === i; }).length;
+      var max = Math.max(1, state.bids.length);
+      return '<div class="stage-row"><span class="lbl">'+esc(s)+'</span><span class="bar"><i style="width:'+Math.round((n/max)*100)+'%"></i></span><span class="n">'+n+'</span></div>';
+    }).join('');
+
+    var recent = state.messages.slice().sort(function(a,b){ return new Date(b.created_at) - new Date(a.created_at); }).slice(0, 6);
+    var activityHtml = recent.length
+      ? recent.map(function(m){
+          return '<div class="activity-row"><span class="who">'+esc(clientName(m.client_id))+'</span> ' +
+            esc(m.from_client ? 'sent a message' : (m.author ? 'replied (' + m.author + ')' : 'replied')) +
+            '<div style="color:var(--ink-sec);margin-top:3px;">'+esc((m.body||'').slice(0,90))+((m.body||'').length>90?'…':'')+'</div>' +
+            '<div class="when">'+relTime(m.created_at)+'</div></div>';
+        }).join('')
+      : '<div class="empty">Nothing yet.</div>';
+
+    var subtitle = !state.clients.length
+      ? "No clients yet. Add your first client on the Clients screen — bids, documents and messages all hang off that record."
+      : "Here's what's moving across your accounts.";
+
     return '' +
-      '<p class="eyebrow">Overview</p>' +
-      '<h1 style="font-size:30px;margin:4px 0 18px;">Good to see you</h1>' +
+      '<p class="eyebrow">'+esc(today.toUpperCase())+'</p>' +
+      '<h1 style="font-size:34px;margin:4px 0 8px;">Overview</h1>' +
+      '<p style="font-size:14.5px;color:var(--ink-sec);margin:0 0 20px;max-width:56em;">'+esc(subtitle)+'</p>' +
       '<div class="stat-strip">' +
-        stat(state.clients.length, 'Clients') +
-        stat(openBids, 'Open bids') +
-        stat(pendingQuotes, 'Quotes awaiting accept') +
-        stat(state.docs.length, 'Documents on file') +
         stat(unreadTotal(), 'Unread messages') +
+        stat(state.clients.length, 'Active clients') +
+        stat(openBids.length, 'Open bids') +
+        stat(dueSoon.length, 'Bids due in 14 days') +
+        stat(pendingQuotes.length, 'Quotes awaiting accept') +
+        stat(state.docs.length, 'Documents on file') +
       '</div>' +
-      '<div class="card"><h3 style="font-size:18px;margin-bottom:10px;">Recent bids</h3>' + renderBidsTable(state.bids.slice(0,8)) + '</div>';
+      '<div class="card" style="margin-bottom:18px;"><h3 style="font-size:19px;margin-bottom:6px;">Needs you today</h3>'+needsHtml+'</div>' +
+      '<div class="ov-two">' +
+        '<div class="card"><h3 style="font-size:19px;margin-bottom:4px;">Pipeline</h3>'+stageHtml+'</div>' +
+        '<div class="card"><h3 style="font-size:19px;margin-bottom:4px;">Recent activity</h3>'+activityHtml+'</div>' +
+      '</div>';
   }
   function stat(n, l){
     return '<div class="stat"><div class="n">'+n+'</div><div class="l">'+esc(l)+'</div></div>';
   }
-  function renderBidsTable(bids){
-    if (!bids.length) return '<div class="empty">No bids yet.</div>';
-    var rows = bids.map(function(b){
-      var c = state.clients.find(function(x){ return x.id === b.client_id; });
-      return '<tr><td>'+esc(b.title)+'</td><td>'+esc(c?c.name:'—')+'</td>' +
-        '<td>'+pill(STAGES[b.stage]||('Stage '+b.stage), 'teal')+'</td>' +
-        '<td>'+esc(b.deadline||'—')+'</td><td>'+esc(b.value||'—')+'</td></tr>';
-    }).join('');
-    return '<table><thead><tr><th>Bid</th><th>Client</th><th>Stage</th><th>Deadline</th><th>Value</th></tr></thead><tbody>'+rows+'</tbody></table>';
-  }
   function pill(text, kind){
     return '<span class="pill pill-'+(kind||'muted')+'">'+esc(text)+'</span>';
+  }
+
+  // ---------------------------------------------------------------
+  // Bids board
+  // ---------------------------------------------------------------
+  function renderBidsBoard(){
+    var cols = STAGES.map(function(stageName, i){
+      var bids = state.bids.filter(function(b){ return b.stage === i; });
+      var cards = bids.map(function(b){
+        var d = daysUntil(b.deadline);
+        var deadlineColor = d === null ? 'var(--muted)' : d < 0 ? 'var(--rust)' : d <= 14 ? 'var(--amber-text)' : 'var(--teal-mid)';
+        return '<div class="board-card">' +
+            '<div class="t">'+esc(b.title)+'</div>' +
+            '<div class="c">'+esc(clientName(b.client_id))+(b.buyer?' · '+esc(b.buyer):'')+'</div>' +
+            '<div style="color:'+deadlineColor+';font-size:11.5px;margin-bottom:2px;">'+esc(b.deadline||'No deadline')+'</div>' +
+            (b.value ? '<div style="color:var(--ink-sec);font-size:11.5px;margin-bottom:8px;">'+esc(b.value)+'</div>' : '<div style="margin-bottom:8px;"></div>') +
+            '<div class="row">' +
+              (i > 0 ? '<button class="btn-outline" data-bid-back="'+b.id+'">‹ Back</button>' : '') +
+              (i < STAGES.length - 1 ? '<button class="btn-outline" data-bid-advance="'+b.id+'">Advance →</button>' : '') +
+            '</div>' +
+          '</div>';
+      }).join('');
+      return '<div class="board-col"><h4>'+esc(stageName)+'</h4><div class="cnt">'+bids.length+' bid'+(bids.length===1?'':'s')+'</div>'+(cards||'')+'</div>';
+    }).join('');
+    return '' +
+      '<p class="eyebrow">Pipeline</p>' +
+      '<h1 style="font-size:30px;margin:4px 0 18px;">Bids</h1>' +
+      (state.bids.length ? '<div class="board">'+cols+'</div>' : '<div class="card"><div class="empty">No bids yet — add one from a client\'s Bids tab.</div></div>');
+  }
+
+  // ---------------------------------------------------------------
+  // Documents (all clients)
+  // ---------------------------------------------------------------
+  function renderDocumentsAll(){
+    var rows = state.docs.slice().sort(function(a,b){ return new Date(b.created_at) - new Date(a.created_at); }).map(function(d){
+      return '<tr><td>'+esc(clientName(d.client_id))+'</td><td>'+esc(d.name)+'</td>' +
+        '<td>'+esc(d.folder||'—')+'</td><td>'+esc(d.size_label||'—')+'</td><td>'+fmtDate(d.created_at)+'</td>' +
+        '<td><button class="btn-quiet btn-danger" data-del="documents:'+d.id+'">Remove</button></td></tr>';
+    }).join('');
+    return '' +
+      '<p class="eyebrow">Vault</p>' +
+      '<h1 style="font-size:30px;margin:4px 0 18px;">Documents</h1>' +
+      '<div class="card" style="padding:0;overflow:hidden;">' +
+        (state.docs.length ?
+          '<table><thead><tr><th>Client</th><th>Name</th><th>Folder</th><th>Note</th><th>Added</th><th></th></tr></thead><tbody>'+rows+'</tbody></table>'
+          : '<div class="empty" style="padding:20px;">No documents on file yet.</div>') +
+      '</div>';
   }
 
   // ---------------------------------------------------------------
@@ -665,6 +844,20 @@
         run(sb.from('bids').update({ stage: parseInt(el.value, 10) }).eq('id', el.getAttribute('data-bid-stage')), 'Stage updated');
       });
     });
+    $all('[data-bid-advance]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var b = state.bids.find(function(x){ return x.id === el.getAttribute('data-bid-advance'); });
+        if (!b) return;
+        run(sb.from('bids').update({ stage: Math.min(STAGES.length - 1, b.stage + 1) }).eq('id', b.id), 'Stage updated');
+      });
+    });
+    $all('[data-bid-back]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var b = state.bids.find(function(x){ return x.id === el.getAttribute('data-bid-back'); });
+        if (!b) return;
+        run(sb.from('bids').update({ stage: Math.max(0, b.stage - 1) }).eq('id', b.id), 'Stage updated');
+      });
+    });
     $all('[data-del-bid]').forEach(function(el){
       el.addEventListener('click', function(){
         if (!confirm('Remove this bid?')) return;
@@ -798,6 +991,19 @@
     });
     var thread = $('#msg-thread');
     if (thread) thread.scrollTop = thread.scrollHeight;
+
+    // "Needs you today" jump links
+    $all('[data-goto-client]').forEach(function(el){
+      el.addEventListener('click', function(){
+        var parts = el.getAttribute('data-goto-client').split(':');
+        var tab = parts[0], clientId = parts[1];
+        state.tab = tab;
+        if (tab === 'clients') { state.expandedClient = clientId; state.clientTab = 'bids'; }
+        else if (tab === 'messages') { state.msgClientId = clientId; state.msgBidId = '__general__'; }
+        render();
+        if (tab === 'messages') markThreadRead(clientId, null);
+      });
+    });
   }
 })();
 </script>
