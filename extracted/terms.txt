@@ -15,7 +15,7 @@ Note before publication. Parts 1 and 2 must be checked against what the website 
 PART 1 — WEBSITE PRIVACY NOTICE
 Last updated: [DATE]
 1.1 Who we are
-Marhana & Co Consulting Ltd is a company registered in England and Wales under company number [●], with its registered office at [●]. We provide public-sector bid and tender consultancy services.
+Marhana & Co Consulting Ltd is a company registered in England and Wales under company number 17460766, with its registered office at [●]. We provide public-sector bid and tender consultancy services.
 For the purposes of data protection law we are the controller of the personal data described in this notice.
 We are registered with the Information Commissioner's Office under registration number [●].
 If you have any question about this notice or about how we handle your personal data, contact us at [PRIVACY EMAIL], or write to us at the address above.
@@ -129,7 +129,7 @@ For more about how we handle personal data, see our Privacy Notice.
 PART 3 — WEBSITE TERMS OF USE
 Last updated: [DATE]
 3.1 Who we are and how to contact us
-This website is operated by Marhana & Co Consulting Ltd, company number [●], registered office [●]. Contact: [EMAIL].
+This website is operated by Marhana & Co Consulting Ltd, company number 17460766, registered office [●]. Contact: [EMAIL].
 3.2 By using our site you accept these terms
 By using our site you confirm that you accept these terms of use and agree to comply with them. If you do not agree, do not use the site. We may amend these terms at any time and the version in force is the one displayed when you use the site.
 3.3 The content on our site is not advice

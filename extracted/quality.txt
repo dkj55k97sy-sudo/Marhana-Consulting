@@ -350,4 +350,4 @@ Operational and Employment Pack
 [LIST]
 
 Document Owner: [DOCUMENT OWNER NAME], [DOCUMENT OWNER ROLE] | Version: [VERSION NUMBER] | Last Reviewed: [LAST REVIEWED DATE] | Next Review Date: [NEXT REVIEW DATE]
-Marhana & Co Consulting Ltd | Company number [COMPANY REGISTRATION NUMBER] | Registered office [REGISTERED OFFICE ADDRESS]
+Marhana & Co Consulting Ltd | Company number 17460766 | Registered office [REGISTERED OFFICE ADDRESS]
