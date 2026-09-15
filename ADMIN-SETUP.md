@@ -59,7 +59,11 @@ password from step 2. Anyone without `is_admin = true` is refused, even with a v
     takes one manual step (below) — the public anon key the site runs on can't send invite
     emails on its own.
 - **Messages** — pick a client and thread (general, or a specific bid), read what they've
-  sent, and reply. Replies appear in their portal immediately.
+  sent, and reply. Replies appear in their portal immediately. A client's message was
+  always landing in this same database the moment they sent it; now it's impossible to
+  miss it too — a count badge sits on the Messages nav item and next to each client and
+  thread in the dropdowns, and clears the moment you open that thread. Also shown as an
+  "Unread messages" figure on the Overview screen.
 
 ## Linking a new client's portal login
 

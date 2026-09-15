@@ -58,10 +58,11 @@
   .nav-item{display:block;width:100%;text-align:left;background:none;border:none;color:rgba(247,243,234,.72);padding:10px 12px;border-radius:8px;font-size:13.5px;margin-bottom:2px;}
   .nav-item:hover{background:rgba(247,243,234,.06);color:#fff;}
   .nav-item.active{background:rgba(247,243,234,.1);color:#fff;}
+  .unread-badge{display:inline-block;min-width:18px;padding:1px 6px;margin-left:8px;border-radius:100px;background:var(--rust);color:#fff;font-size:11px;text-align:center;line-height:16px;vertical-align:middle;}
   .sidebar-foot{margin-top:auto;padding-top:16px;border-top:1px solid rgba(247,243,234,.12);font-size:12px;color:rgba(247,243,234,.55);}
   .sidebar-foot .who{color:rgba(247,243,234,.85);margin-bottom:8px;}
   main{flex:1;padding:28px 32px;max-width:1100px;}
-  .stat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0 24px;}
+  .stat-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:18px 0 24px;}
   .stat{background:var(--card);border:1px solid var(--card-line);border-radius:14px;padding:16px 18px;}
   .stat .n{font-family:'Cormorant Garamond',serif;font-size:32px;line-height:1;}
   .stat .l{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:6px;}
@@ -124,7 +125,7 @@
     <div class="brand">Marhana &amp; Co<span>Admin console</span></div>
     <button class="nav-item" data-tab="overview">Overview</button>
     <button class="nav-item" data-tab="clients">Clients</button>
-    <button class="nav-item" data-tab="messages">Messages</button>
+    <button class="nav-item" data-tab="messages">Messages<span class="unread-badge" id="unread-badge" hidden>0</span></button>
     <div class="sidebar-foot">
       <div class="who" id="who-am-i"></div>
       <button class="nav-item" id="signout-btn" style="padding-left:0;">Sign out</button>
@@ -258,6 +259,21 @@
     return list.filter(function(x){ return x.client_id === clientId; });
   }
 
+  function isUnread(m){ return m.from_client && !m.read_at; }
+  function unreadTotal(){ return state.messages.filter(isUnread).length; }
+  function unreadForClient(clientId){ return state.messages.filter(function(m){ return m.client_id === clientId && isUnread(m); }).length; }
+  function unreadForThread(clientId, bidId){
+    return state.messages.filter(function(m){ return m.client_id === clientId && (m.bid_id || null) === (bidId || null) && isUnread(m); }).length;
+  }
+  function markThreadRead(clientId, bidId){
+    var unread = unreadForThread(clientId, bidId);
+    if (!unread) return;
+    var q = sb.from('messages').update({ read_at: new Date().toISOString() })
+      .eq('client_id', clientId).eq('from_client', true).is('read_at', null);
+    q = bidId ? q.eq('bid_id', bidId) : q.is('bid_id', null);
+    q.then(function(res){ if (!res.error) loadAll(); });
+  }
+
   // ---------------------------------------------------------------
   // Mutations (small helpers, all reload + toast)
   // ---------------------------------------------------------------
@@ -276,6 +292,9 @@
     btn.addEventListener('click', function(){
       state.tab = btn.getAttribute('data-tab');
       render();
+      if (state.tab === 'messages' && state.msgClientId) {
+        markThreadRead(state.msgClientId, state.msgBidId === '__general__' ? null : state.msgBidId);
+      }
     });
   });
 
@@ -286,6 +305,10 @@
     $all('.nav-item[data-tab]').forEach(function(b){
       b.classList.toggle('active', b.getAttribute('data-tab') === state.tab);
     });
+    var badge = $('#unread-badge');
+    var n = unreadTotal();
+    badge.textContent = n > 99 ? '99+' : String(n);
+    badge.hidden = n === 0;
     var main = $('#main');
     if (state.tab === 'overview') main.innerHTML = renderOverview();
     else if (state.tab === 'clients') main.innerHTML = renderClients();
@@ -307,6 +330,7 @@
         stat(openBids, 'Open bids') +
         stat(pendingQuotes, 'Quotes awaiting accept') +
         stat(state.docs.length, 'Documents on file') +
+        stat(unreadTotal(), 'Unread messages') +
       '</div>' +
       '<div class="card"><h3 style="font-size:18px;margin-bottom:10px;">Recent bids</h3>' + renderBidsTable(state.bids.slice(0,8)) + '</div>';
   }
@@ -549,8 +573,12 @@
     }
     if (!state.msgClientId) state.msgClientId = state.clients[0].id;
     var clientBids = byClient(state.bids, state.msgClientId);
-    var options = '<option value="__general__"'+(state.msgBidId==='__general__'?' selected':'')+'>General</option>' +
-      clientBids.map(function(b){ return '<option value="'+b.id+'"'+(state.msgBidId===b.id?' selected':'')+'>'+esc(b.title)+'</option>'; }).join('');
+    var generalUnread = unreadForThread(state.msgClientId, null);
+    var options = '<option value="__general__"'+(state.msgBidId==='__general__'?' selected':'')+'>General'+(generalUnread?' ('+generalUnread+')':'')+'</option>' +
+      clientBids.map(function(b){
+        var n = unreadForThread(state.msgClientId, b.id);
+        return '<option value="'+b.id+'"'+(state.msgBidId===b.id?' selected':'')+'>'+esc(b.title)+(n?' ('+n+')':'')+'</option>';
+      }).join('');
 
     var bidId = state.msgBidId === '__general__' ? null : state.msgBidId;
     var thread = state.messages.filter(function(m){
@@ -566,7 +594,10 @@
       '<h1 style="font-size:30px;margin:4px 0 18px;">Messages</h1>' +
       '<div class="row" style="margin-bottom:14px;">' +
         '<select id="msg-client" style="max-width:260px;">' +
-          state.clients.map(function(c){ return '<option value="'+c.id+'"'+(c.id===state.msgClientId?' selected':'')+'>'+esc(c.name)+'</option>'; }).join('') +
+          state.clients.map(function(c){
+            var n = unreadForClient(c.id);
+            return '<option value="'+c.id+'"'+(c.id===state.msgClientId?' selected':'')+'>'+esc(c.name)+(n?' ('+n+')':'')+'</option>';
+          }).join('') +
         '</select>' +
         '<select id="msg-bid" style="max-width:260px;">'+options+'</select>' +
       '</div>' +
@@ -748,9 +779,13 @@
     var msgClientSel = $('#msg-client');
     if (msgClientSel) msgClientSel.addEventListener('change', function(){
       state.msgClientId = msgClientSel.value; state.msgBidId = '__general__'; render();
+      markThreadRead(state.msgClientId, null);
     });
     var msgBidSel = $('#msg-bid');
-    if (msgBidSel) msgBidSel.addEventListener('change', function(){ state.msgBidId = msgBidSel.value; render(); });
+    if (msgBidSel) msgBidSel.addEventListener('change', function(){
+      state.msgBidId = msgBidSel.value; render();
+      markThreadRead(state.msgClientId, state.msgBidId === '__general__' ? null : state.msgBidId);
+    });
     var sendBtn = $('#msg-send');
     if (sendBtn) sendBtn.addEventListener('click', function(){
       var body = $('#msg-body').value.trim();

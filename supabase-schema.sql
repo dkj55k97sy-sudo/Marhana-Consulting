@@ -104,6 +104,7 @@ create table if not exists messages (
   body text not null,
   from_client boolean default true,
   author text,
+  read_at timestamptz,
   created_at timestamptz default now()
 );
 
