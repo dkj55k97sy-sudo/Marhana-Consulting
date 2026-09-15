@@ -95,6 +95,8 @@
     [data-r~="card"] { padding: 30px 24px !important; }
     [data-detail] { padding-left: 0 !important; }
     [data-r~="two"], [data-r~="three"], [data-r~="four"], [data-r~="rows"] { grid-template-columns: 1fr !important; gap: 34px !important; }
+    footer [data-r~="three"] { grid-template-columns: 1fr 1fr !important; gap: 40px 24px !important; }
+    footer [data-r~="three"] > div:first-child { grid-column: 1 / -1; }
     [data-r~="numrow"] { grid-template-columns: 48px 1fr !important; gap: 14px !important; }
     [data-led] { grid-template-columns: 46px 1fr 24px !important; column-gap: 14px !important; padding: 24px 0 !important; }
     [data-led] [data-fee] { grid-column: 2; grid-row: 2; margin-top: 11px; font-size: 21px; }
@@ -110,8 +112,9 @@
     body[data-scrolled="1"] [data-r~="head"] { height: 74px !important; }
     body[data-scrolled="1"] header img { height: 44px !important; }
     [data-fx="burger"] { display: flex !important; }
-    [data-r~="nav"] { display: none !important; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column !important; align-items: stretch !important; text-align: center; gap: 0 !important; padding: 6px 22px 24px; background: #0C2C2A; border-top: 1px solid rgba(247,243,234,0.14); box-shadow: 0 24px 48px rgba(12,44,42,0.4); }
+    [data-r~="nav"] { display: none !important; position: fixed; top: 66px; left: 0; right: 0; bottom: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; flex-direction: column !important; align-items: stretch !important; text-align: center; gap: 0 !important; padding: 6px 22px 24px; background: #0C2C2A; border-top: 1px solid rgba(247,243,234,0.14); box-shadow: 0 24px 48px rgba(12,44,42,0.4); z-index: 150; }
     [data-r~="nav"][data-open="true"] { display: flex !important; }
+    body:has([data-r~="nav"][data-open="true"]) { overflow: hidden; }
     [data-r~="nav"] > div, [data-r~="nav"] > a { display: block; padding: 17px 0 !important; border-bottom: 1px solid rgba(247,243,234,0.10) !important; font-size: 13px !important; }
     [data-r~="nav"] > div::after, [data-r~="nav"] > a::after { display: none !important; }
     [data-r~="nav"] > div:last-child { margin-top: 18px; text-align: center; border-bottom: none !important; padding: 17px 22px !important; }
