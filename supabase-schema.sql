@@ -7,6 +7,10 @@
 create table if not exists clients (
   id uuid primary key default gen_random_uuid(),
   name text not null,
+  sector text,
+  contact_name text,
+  contact_email text,
+  contact_phone text,
   created_at timestamptz default now()
 );
 
@@ -119,8 +123,14 @@ alter table messages          enable row level security;
 create policy "own profile" on profiles
   for select using (id = auth.uid());
 
+create policy "update own profile" on profiles
+  for update using (id = auth.uid()) with check (id = auth.uid());
+
 create policy "own client" on clients
   for select using (id = current_client_id());
+
+create policy "update own client" on clients
+  for update using (id = current_client_id()) with check (id = current_client_id());
 
 -- Read-only tables for the client
 create policy "read bids"     on bids     for select using (client_id = current_client_id());

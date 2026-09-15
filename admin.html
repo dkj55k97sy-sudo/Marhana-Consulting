@@ -522,9 +522,21 @@
     }
     return info +
       '<div class="inset" style="margin-top:14px;">' +
-        '<label class="f">Rename client</label>' +
-        '<div class="row"><input id="rename-client" value="'+esc(c.name)+'"><button class="btn-outline" data-rename="'+c.id+'">Save</button>' +
-        '<button class="btn-outline btn-danger" data-delete-client="'+c.id+'">Delete client</button></div>' +
+        '<label class="f" style="margin-bottom:10px;display:block;">Business details</label>' +
+        '<p style="font-size:12px;color:var(--ink-sec);margin:0 0 10px;">Same fields the client can edit themselves from their own Profile tab — whoever saves last wins.</p>' +
+        '<div class="grid2" style="margin-bottom:10px;">' +
+          '<div><label class="f">Business name</label><input id="ea-name" value="'+esc(c.name)+'"></div>' +
+          '<div><label class="f">Sector</label><input id="ea-sector" value="'+esc(c.sector||'')+'" placeholder="Facilities management"></div>' +
+        '</div>' +
+        '<div class="grid2" style="margin-bottom:10px;">' +
+          '<div><label class="f">Primary contact</label><input id="ea-contact-name" value="'+esc(c.contact_name||'')+'" placeholder="Alan Vale"></div>' +
+          '<div><label class="f">Contact phone</label><input id="ea-contact-phone" value="'+esc(c.contact_phone||'')+'" placeholder="020 7000 0000"></div>' +
+        '</div>' +
+        '<div style="margin-bottom:10px;"><label class="f">Contact email</label><input id="ea-contact-email" value="'+esc(c.contact_email||'')+'" placeholder="alan@ashworthvale.co.uk"></div>' +
+        '<div class="row">' +
+          '<button class="btn-outline" data-save-details="'+c.id+'">Save details</button>' +
+          '<button class="btn-outline btn-danger" data-delete-client="'+c.id+'">Delete client</button>' +
+        '</div>' +
       '</div>';
   }
 
@@ -711,11 +723,17 @@
         run(sb.from('profiles').insert({ id: uid, client_id: clientId, full_name: name || null }), 'Portal user linked');
       });
     });
-    $all('[data-rename]').forEach(function(el){
+    $all('[data-save-details]').forEach(function(el){
       el.addEventListener('click', function(){
-        var val = $('#rename-client').value.trim();
-        if (!val) return toast('Name cannot be empty', true);
-        run(sb.from('clients').update({ name: val }).eq('id', el.getAttribute('data-rename')), 'Client renamed');
+        var name = $('#ea-name').value.trim();
+        if (!name) return toast('Business name cannot be empty', true);
+        run(sb.from('clients').update({
+          name: name,
+          sector: $('#ea-sector').value.trim(),
+          contact_name: $('#ea-contact-name').value.trim(),
+          contact_email: $('#ea-contact-email').value.trim(),
+          contact_phone: $('#ea-contact-phone').value.trim()
+        }).eq('id', el.getAttribute('data-save-details')), 'Details saved');
       });
     });
     $all('[data-delete-client]').forEach(function(el){
