@@ -112,9 +112,8 @@
     body[data-scrolled="1"] [data-r~="head"] { height: 74px !important; }
     body[data-scrolled="1"] header img { height: 44px !important; }
     [data-fx="burger"] { display: flex !important; }
-    [data-r~="nav"] { display: none !important; position: fixed; top: 66px; left: 0; right: 0; bottom: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; flex-direction: column !important; align-items: stretch !important; text-align: center; gap: 0 !important; padding: 6px 22px 24px; background: #0C2C2A; border-top: 1px solid rgba(247,243,234,0.14); box-shadow: 0 24px 48px rgba(12,44,42,0.4); z-index: 150; }
+    [data-r~="nav"] { display: none !important; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column !important; align-items: stretch !important; text-align: center; gap: 0 !important; padding: 6px 22px 24px; background: #0C2C2A; border-top: 1px solid rgba(247,243,234,0.14); box-shadow: 0 24px 48px rgba(12,44,42,0.4); }
     [data-r~="nav"][data-open="true"] { display: flex !important; }
-    body:has([data-r~="nav"][data-open="true"]) { overflow: hidden; }
     [data-r~="nav"] > div, [data-r~="nav"] > a { display: block; padding: 17px 0 !important; border-bottom: 1px solid rgba(247,243,234,0.10) !important; font-size: 13px !important; }
     [data-r~="nav"] > div::after, [data-r~="nav"] > a::after { display: none !important; }
     [data-r~="nav"] > div:last-child { margin-top: 18px; text-align: center; border-bottom: none !important; padding: 17px 22px !important; }
