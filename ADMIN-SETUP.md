@@ -46,7 +46,7 @@ password from step 2. Anyone without `is_admin = true` is refused, even with a v
 
 ## What you can do from the admin console
 
-- **Clients** — add a client, rename or delete one, and open any client to manage:
+- **Clients** — add a client, edit its business details (name, sector, primary contact, contact email/phone — the same fields the client can edit themselves from their own Profile tab) or delete one, and open any client to manage:
   - **Bids** — add a bid, move it through the six milestones, remove it. The client's
     tracker updates the moment they reload their portal.
   - **Tasks** and **Compliance** — add items, tick/untick them yourself if needed (clients

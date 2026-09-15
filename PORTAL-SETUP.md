@@ -85,6 +85,8 @@ Deploy the site folder, open `/portal`, and sign in as the client. You should se
 - **Live data.** Bids, deadlines, to-do list, checklist, documents, quotes, invoices and messages all read from your database.
 - **Client actions save.** Ticking a to-do or checklist item, accepting a quote, uploading a document and sending a message all write back.
 - **Separation between clients.** Enforced by the database, not the page, so it holds even if someone inspects the code.
+- **A Guide tab.** A plain-language explanation of every other tab, reachable any time from the sidebar — nothing to configure, it's built in.
+- **A Profile tab.** The client can set their own name and their business's name, sector and contact details. Run `SUPABASE-CLIENT-PROFILE.sql` (same way as this file's schema) before this tab will save — otherwise the fields show but "Save changes" reports it couldn't save.
 
 ## What you still do from the Supabase dashboard
 
