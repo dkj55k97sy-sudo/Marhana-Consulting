@@ -1,0 +1,314 @@
+PUBLIC-FACING
+SAFEGUARDING POLICY
+Marhana & Co Consulting Ltd
+Safeguarding children and adults at risk. Covers what the Company does, what it does not do, and what it does when it encounters a concern.
+Field
+Entry
+Document Owner
+[DOCUMENT OWNER NAME], [DOCUMENT OWNER ROLE]
+Version
+[VERSION NUMBER]
+Approved by
+[APPROVER NAME], [APPROVER ROLE]
+Date of approval
+[DATE OF APPROVAL]
+Last Reviewed
+[LAST REVIEWED DATE]
+Next Review Date
+[NEXT REVIEW DATE]
+Safeguarding Lead
+[SAFEGUARDING LEAD NAME], [ROLE] — [EMAIL] / [TELEPHONE]
+Deputy
+[DEPUTY NAME], [ROLE] — [EMAIL] / [TELEPHONE]
+Applies to
+Directors, employees, Associates and anyone acting for the Company
+Published at
+[WEBSITE ADDRESS]/policies
+Related documents
+Business Conduct Manual; Information Governance Manual; Staff Handbook; Associate Agreement
+SECTION A — PURPOSE, AND WHY A BID CONSULTANCY NEEDS THIS
+A.1  Marhana & Co Consulting Ltd (the "Company") does not provide care, education or support services. It does not work unsupervised with children or adults at risk, and nothing it does is regulated activity within the meaning of the Safeguarding Vulnerable Groups Act 2006.
+A.2  It nevertheless needs this policy for three reasons, each of them real rather than presentational:
+Its clients include, or will include, care providers, supported housing providers, domiciliary care agencies, education suppliers and NHS-adjacent suppliers. The Company attends their premises.
+Client documentation supplied for bid purposes — incident logs, CQC or Ofsted reports, complaints records, staffing records, case studies — routinely contains safeguarding information. Encountering a concern in a document is as capable of triggering a duty to act as encountering it in a room.
+Contracting authorities in health, social care, education and housing require suppliers and their subcontractors to hold a safeguarding policy, and evaluate it.
+A.3  The Company's safeguarding responsibility is therefore a responsibility to recognise, record and report. It is not a responsibility to investigate, assess or intervene, and this policy is written so that nobody acting for the Company mistakes the one for the other.
+A.4  Everyone who works for the Company must read this policy before their first engagement and confirm they have done so.
+SECTION B — DEFINITIONS
+Term
+Meaning
+Child
+Anyone who has not reached their 18th birthday, regardless of whether they are living independently, in employment, in further education or in the armed forces (Children Act 1989)
+Adult at risk
+An adult aged 18 or over who has needs for care and support (whether or not the authority is meeting any of those needs), is experiencing or at risk of abuse or neglect, and as a result of those needs is unable to protect themselves against the abuse or neglect or the risk of it (Care Act 2014, section 42)
+Safeguarding
+Protecting a person's right to live in safety, free from abuse and neglect
+Abuse of an adult
+The Care and Support Statutory Guidance identifies physical, domestic, sexual, psychological or emotional, financial or material, modern slavery, discriminatory, organisational, neglect and acts of omission, and self-neglect. The list is not exhaustive
+Abuse of a child
+Physical abuse, emotional abuse, sexual abuse and neglect, as described in Working Together to Safeguard Children. Includes child sexual exploitation, child criminal exploitation, and abuse occurring online
+Regulated activity
+Activity as defined in Schedule 4 to the Safeguarding Vulnerable Groups Act 2006. The Company does not carry it out — see Section D
+Concern
+Anything that causes a person to worry about the safety or welfare of a child or adult at risk, whether seen, heard, read or disclosed. A concern does not require evidence, certainty or corroboration
+SECTION C — LEGAL AND POLICY FRAMEWORK
+Instrument
+Relevance to the Company
+Children Act 1989 and Children Act 2004
+The framework for child protection. Section 11 of the 2004 Act places duties on named agencies; the Company is not one, but its clients may be
+Working Together to Safeguard Children (statutory guidance, as current)
+Sets out how agencies work together and the multi-agency referral route used at Section H
+Care Act 2014, sections 42 to 46, and the Care and Support Statutory Guidance
+The framework for adult safeguarding, the section 42 enquiry duty on local authorities, and the six safeguarding principles applied at Section E
+Safeguarding Vulnerable Groups Act 2006 and the Disclosure and Barring Service
+Defines regulated activity and the eligibility for barred list and enhanced checks. See Section D
+Mental Capacity Act 2005
+Capacity is presumed. Where an adult has capacity, their wishes about a referral are respected save where others are at risk — see Section J
+Sexual Offences Act 2003
+Includes offences relating to abuse of a position of trust
+Modern Slavery Act 2015
+Section 52 duty to notify applies to specified public authorities, not to the Company. The Company nevertheless reports suspected exploitation under Section H
+Counter-Terrorism and Security Act 2015, section 26 (Prevent duty)
+Applies to specified authorities. The Company is not one. It will nevertheless refer a radicalisation concern under Section H
+Female Genital Mutilation Act 2003, section 5B
+Mandatory reporting applies to regulated health and social care professionals and teachers. It does not apply to the Company, which would report under Section H instead
+Public Interest Disclosure Act 1998
+Protects a worker who raises a safeguarding concern in the public interest
+UK GDPR and Data Protection Act 2018
+Governs sharing information about a concern. Data protection is not a reason not to share — see Section J
+SECTION D — THE COMPANY'S POSITION ON DBS CHECKS
+D.1  The Company does not carry out regulated activity. Its personnel do not provide care, treatment, supervision, teaching, transport or personal assistance to children or adults at risk, and do not have unsupervised access to them in the course of the Company's work.
+D.2  Accordingly the Company's personnel are not eligible for enhanced DBS certificates with barred list checks, and the Company does not require them. It is an offence under section 123 of the Police Act 1997 to knowingly make a false statement to obtain a certificate, and an employer may not obtain a check at a level for which the role is not eligible.
+D.3  Where a contracting authority or client asks whether the Company's personnel are DBS checked, the accurate answer is that the work is not regulated activity, that checks are therefore not eligible, and that the controls actually applied are those at Sections L and M of this policy. That answer is more credible than an unnecessary certificate.
+D.4  If an engagement would involve the Company's personnel in regulated activity — for example, unsupervised attendance at a service where children or adults at risk are present — the Company will either restructure the engagement so that it does not, or decline it. It will not accept such an engagement on the basis that attendance will be brief.
+D.5  [Basic DBS certificates are / are not] obtained for personnel as a matter of Company practice. Where obtained, they are handled in accordance with the DBS Code of Practice and are not retained beyond the period recorded in the Retention and Disposal Schedule.
+SECTION E — PRINCIPLES
+E.1  The Company applies the six safeguarding principles in the Care and Support Statutory Guidance: empowerment, prevention, proportionality, protection, partnership and accountability.
+E.2  In addition:
+The welfare of the child or adult at risk comes before the commercial relationship. No fee, deadline, bid or client relationship justifies not reporting a concern.
+A concern is reported even if someone else may already have reported it, and even if the person acting for the Company is not certain.
+Nobody acting for the Company investigates. Investigation is for the local authority, the police and the regulator.
+Nobody acting for the Company promises confidentiality to a person who discloses.
+SECTION F — THE SAFEGUARDING LEAD
+F.1  [SAFEGUARDING LEAD NAME], [ROLE] is the Company's Designated Safeguarding Lead. [DEPUTY NAME], [ROLE] deputises.
+F.2  The Lead is responsible for receiving concerns, deciding on referral, making referrals, maintaining the record at Annex B, ensuring training is completed, and reporting to the board.
+F.3  The Lead maintains the local contact details at Annex C and checks them at each review. A referral route that is out of date is the commonest reason a referral is delayed.
+F.4  The Lead's decision not to refer must be recorded with reasons. An unrecorded decision not to refer is indistinguishable from a failure to consider it.
+SECTION G — WHAT TO DO
+These four steps apply to everyone. They are short deliberately.
+
+Step
+What it means
+1
+Make sure the person is safe now
+If there is an immediate risk to life or of serious harm, call 999. Do not wait for the Safeguarding Lead. Do not leave the situation to report it if leaving would increase the risk
+2
+Do not investigate
+Do not question the person beyond what is needed to understand that there is a concern. Do not interview anyone. Do not confront the person the concern is about. Do not take photographs. Do not remove or copy documents beyond the record at step 3
+3
+Record it the same day
+Use the form at Annex A. Record what was seen, heard or read, in the words used, with dates, times and who was present. Separate fact from your interpretation, and label which is which. Sign and date it
+4
+Report it within [2] hours
+To the Safeguarding Lead, by telephone and then in writing. If the Lead is unavailable, to the Deputy. If neither is available and the concern is urgent, make the referral yourself using Section H and tell the Lead as soon as you can
+
+G.1  If a person discloses to you: listen, do not interrupt, do not ask leading questions, do not promise to keep it secret, tell them what you have to do next, and thank them for telling you.
+G.2  The duty to report is personal. It is not discharged by telling a colleague or by assuming the client will deal with it.
+SECTION H — REPORTING ROUTES
+Situation
+Route
+Immediate risk to life or of serious harm
+999
+Non-urgent police matter
+101
+Concern about a child
+Children's services in the local authority area where the child lives, usually through the Multi-Agency Safeguarding Hub (MASH). Contact details at Annex C
+Concern about an adult at risk
+Adult social care safeguarding team in the local authority area where the adult lives. Contact details at Annex C
+Concern that an adult working with children has harmed a child or behaved in a way that indicates they are unsuitable
+The Local Authority Designated Officer (LADO) for the area in which the employer is based
+Concern about the safety of a regulated service as a whole, rather than an individual
+The regulator: Care Quality Commission, Ofsted, or the relevant inspectorate. Also raise with the client in writing
+Suspected modern slavery or human trafficking
+Modern Slavery and Exploitation Helpline 08000 121 700; police 101 or 999 where urgent
+Concern about radicalisation
+The local authority Prevent team, or the police on 101 (ACT Early advice line where appropriate)
+Concern about a person in a position of trust in the Company
+Section I
+Concern about the Safeguarding Lead
+Direct to the other director, and directly to the local authority
+
+H.1  A referral is made even where the concern arises from a document supplied by a client for bid purposes rather than from something witnessed.
+H.2  Where a concern arises from a client's own records, the Company will ordinarily tell the client that it is referring, unless doing so would place a person at greater risk, impede an investigation or amount to tipping off. That decision is the Lead's and is recorded.
+SECTION I — ALLEGATIONS ABOUT THE COMPANY'S OWN PEOPLE
+I.1  An allegation that a director, employee or Associate has harmed a child or adult at risk, or behaved towards one in a way that indicates unsuitability, is reported immediately to the Safeguarding Lead and referred to the local authority and, where appropriate, the LADO and the police.
+I.2  The Company will not carry out its own investigation ahead of, or instead of, the statutory process, and will not conduct disciplinary interviews that could prejudice a police investigation.
+I.3  The person will be withdrawn from any engagement in which the risk could recur while the matter is dealt with. Withdrawal is a neutral act and is not a disciplinary sanction or a finding.
+I.4  The Company will consider whether it is under a duty to refer the person to the DBS under section 35 of the Safeguarding Vulnerable Groups Act 2006, and will take advice on that question.
+I.5  The Company's professional indemnity and any other relevant insurer is notified in accordance with the policy conditions.
+SECTION J — CONFIDENTIALITY AND INFORMATION SHARING
+J.1  Data protection law is not a barrier to sharing information for safeguarding purposes. It requires that sharing be lawful, necessary and proportionate.
+J.2  The lawful basis for sharing a safeguarding concern is Article 6(1)(d) UK GDPR where it is necessary to protect vital interests, or Article 6(1)(f). Where the information includes special category data, the condition is Article 9(2)(b), (c) or (g) as applicable, read with paragraph 18 of Part 2 of Schedule 1 to the Data Protection Act 2018 (safeguarding of children and of individuals at risk), which permits processing without consent where obtaining consent would prejudice the safeguarding purpose.
+J.3  Information about a concern is shared on a need-to-know basis only, with those who need it to act.
+J.4  Consent is not required to make a safeguarding referral. Where an adult with capacity objects to a referral, their wishes are respected unless other people are at risk, a criminal offence may have been committed, there is a duty to act in the public interest, or coercion means the objection cannot be treated as free. The Lead records which of those applies.
+J.5  Records of concerns are held securely and separately from client engagement files, are accessible only to the Lead and the Deputy, and are retained for the period stated in the Retention and Disposal Schedule.
+J.6  Nothing in the Company's Terms of Engagement, any non-disclosure agreement or any confidentiality clause prevents or delays the reporting of a safeguarding concern. That is stated here so that nobody acting for the Company hesitates over it.
+SECTION K — WHISTLEBLOWING
+K.1  A person who raises a safeguarding concern in the public interest is protected from detriment under the Public Interest Disclosure Act 1998, whether or not the concern turns out to be well founded.
+K.2  Where an internal route is not appropriate, a disclosure may be made to a prescribed person, including the CQC, Ofsted, the relevant local authority, or the NSPCC whistleblowing advice line on 0800 028 0285.
+K.3  Victimising a person who has raised a concern is gross misconduct.
+SECTION L — TRAINING
+Who
+Level
+When
+Refresher
+All directors, employees and Associates
+Safeguarding awareness (level 1), children and adults
+Before first engagement
+Every [2] years
+Safeguarding Lead and Deputy
+Designated safeguarding lead training (level [2/3])
+On appointment
+Every [2] years
+Anyone attending a care, housing or education client site
+Site-specific briefing plus this policy
+Before the visit
+Each new client
+
+L.1  Completion is recorded in the Training and CPD Record and evidenced to contracting authorities from the Evidence Bank at T10, Section E.
+SECTION M — CONDUCT ON CLIENT PREMISES
+M.1  Sign in, wear identification, and comply with the client's own safeguarding and visitor policies, which take precedence on their premises.
+M.2  Remain escorted. Do not enter residential, clinical, classroom or personal areas.
+M.3  Do not work alone with, transport, provide personal care to, or communicate privately with a service user, resident, pupil or patient. If asked to, decline and tell the client why.
+M.4  Do not photograph, film or record people. Where images are needed for a bid, the client obtains and evidences consent and supplies the images.
+M.5  Do not accept or exchange personal contact details with a service user.
+M.6  Anonymise individuals in any case study, social value report or bid response unless the client has supplied written consent, which is recorded under the case study consent block.
+SECTION N — RECORDS, REVIEW AND APPROVAL
+N.1  Every concern, referral and decision not to refer is recorded at Annex B.
+N.2  The board reviews safeguarding at least annually, and this policy is reviewed at least annually and after any concern is raised.
+N.3  The annual review checks: that the Lead and Deputy are in post and trained; that the contacts at Annex C are current; that training is complete; and that every concern in the period was recorded and resolved.
+
+Approved on behalf of the board
+
+Name
+[APPROVER NAME]
+Role
+[APPROVER ROLE]
+Signature
+
+Date
+[DATE]
+
+ANNEX A — SAFEGUARDING CONCERN RECORD
+Complete on the day. Record facts in the words used. Do not investigate before completing this form.
+Field
+Entry
+Your name and role
+[NAME], [ROLE]
+Date and time of the concern
+[DATE] [TIME]
+Date and time of this record
+[DATE] [TIME]
+Where it arose
+[CLIENT PREMISES / DOCUMENT REVIEW / DISCLOSURE / OTHER]
+Client or engagement reference
+[REFERENCE]
+Person the concern is about (if known)
+[NAME / DESCRIPTION / UNKNOWN]
+Child or adult at risk
+[CHILD — AGE / ADULT]
+Who else was present
+[NAMES]
+What was seen, heard or read — FACTS ONLY, in the words used
+[FACTUAL ACCOUNT]
+Anything said by the person, verbatim
+[VERBATIM]
+Your interpretation — clearly separated from the facts above
+[INTERPRETATION]
+Immediate action taken
+[ACTION — INCLUDING ANY 999 CALL]
+Reported to the Safeguarding Lead
+[NAME] at [DATE] [TIME], by [TELEPHONE / EMAIL]
+Signature
+
+Safeguarding Lead's decision
+Field
+Entry
+Received at
+[DATE] [TIME]
+Decision
+[REFER / DO NOT REFER / SEEK ADVICE FIRST]
+Reasons for the decision
+[REASONS — MANDATORY, INCLUDING WHERE THE DECISION IS NOT TO REFER]
+Referred to
+[AGENCY]
+Date, time and method of referral
+[DATE] [TIME] [METHOD]
+Referral reference given
+[REFERENCE]
+Client informed
+[YES / NO — AND WHY]
+Insurer notified
+[YES / NO / NOT APPLICABLE]
+Outcome, if known
+[OUTCOME]
+Recorded at Annex B
+[YES — REF]
+Signature and date
+
+ANNEX B — SAFEGUARDING CONCERNS REGISTER
+Ref
+Date
+Raised by
+Nature (brief, non-identifying)
+Decision and reasons
+Referred to
+Closed
+SG-001
+[DATE]
+[NAME]
+[NATURE]
+[DECISION]
+[AGENCY]
+[DATE]
+
+ANNEX C — LOCAL CONTACTS
+Complete for the Company's own area and for the area of each client site attended. Check at every review — these change.
+Authority area
+Children's services / MASH
+Adult safeguarding
+LADO
+[COMPANY'S OWN AREA]
+[TELEPHONE / EMAIL]
+[TELEPHONE / EMAIL]
+[TELEPHONE / EMAIL]
+[CLIENT AREA 1]
+[TELEPHONE / EMAIL]
+[TELEPHONE / EMAIL]
+[TELEPHONE / EMAIL]
+[CLIENT AREA 2]
+[TELEPHONE / EMAIL]
+[TELEPHONE / EMAIL]
+[TELEPHONE / EMAIL]
+
+National contact
+Number
+Emergency services
+999
+Police, non-emergency
+101
+NSPCC Helpline (adults worried about a child)
+0808 800 5000
+NSPCC Whistleblowing Advice Line
+0800 028 0285
+Childline
+0800 1111
+Modern Slavery and Exploitation Helpline
+08000 121 700
+Care Quality Commission
+03000 616161
+Ofsted
+0300 123 1231
+
+Document Owner: [DOCUMENT OWNER NAME], [DOCUMENT OWNER ROLE] | Version: [VERSION NUMBER] | Last Reviewed: [LAST REVIEWED DATE] | Next Review Date: [NEXT REVIEW DATE]
+Marhana & Co Consulting Ltd | Company number [COMPANY REGISTRATION NUMBER] | Registered office [REGISTERED OFFICE ADDRESS]

@@ -1,0 +1,165 @@
+
+PRIVACY NOTICE
+Marhana & Co Consulting Ltd
+How we collect, use and protect personal data
+Field
+Entry
+Document Owner
+[DOCUMENT OWNER NAME], [DOCUMENT OWNER ROLE]
+Version
+[VERSION NUMBER]
+Last Reviewed
+[LAST REVIEWED DATE]
+Next Review Date
+[NEXT REVIEW DATE]
+Published at
+[WEBSITE ADDRESS]/privacy
+ICO registration
+[ICO REGISTRATION NUMBER]
+
+SECTION A — WHO WE ARE
+Marhana & Co Consulting Ltd is a company registered in England and Wales under company number [COMPANY REGISTRATION NUMBER], with its registered office at [REGISTERED OFFICE ADDRESS]. We provide public-sector bid and tender support services to small and medium-sized enterprises.
+We are registered with the Information Commissioner's Office under registration number [ICO REGISTRATION NUMBER].
+For most of the activities described in this notice we are the data controller. In some circumstances we act as a processor on a client's behalf; Section G explains when.
+We have not appointed a Data Protection Officer, as we are not required to do so under Article 37 of the UK GDPR. Responsibility for data protection rests with [DATA PROTECTION LEAD NAME], [DATA PROTECTION LEAD ROLE], contactable at [DATA PROTECTION EMAIL].
+SECTION B — WHO THIS NOTICE COVERS
+This notice applies to:
+Individuals at client and prospective client organisations
+Individuals whose details appear in tender submissions we help prepare, including directors, named personnel, referees and authority contacts
+Associates, subcontractors and suppliers
+Referral partners and professional contacts
+Visitors to our website
+Anyone who contacts us or makes a complaint
+It does not cover any separate processing carried out by a client under their own privacy notice.
+SECTION C — PERSONAL DATA WE PROCESS
+Category
+Examples
+Contact and identity
+Name, job title, employer, email address, telephone number, business address
+Engagement records
+Correspondence, meeting notes, instructions given, decisions recorded, approvals
+Submission content
+Names, roles, qualifications, professional registrations, employment history and other details included in a tender response at the client's instruction
+Verification records
+Identity confirmation for the individual instructing us, and public-record checks on the client organisation
+Financial
+Billing contact, invoice records, payment history. We do not store card details
+Associate records
+Contact details, qualifications, engagement terms, right-to-work confirmation
+Website
+IP address, browser and device information, pages visited, referring source
+Complaints
+Details of a complaint, the investigation and the outcome
+We do not seek special category data. Where a client supplies it — for example health or diversity information within submission material — Section F applies.
+SECTION D — WHERE WE OBTAIN IT
+Directly from you, when you contact us, instruct us, or work with us
+From our client, where you are an employee, director, referee or subcontractor of that client and your details are needed for a submission
+From publicly available sources, including Companies House, the Central Digital Platform, published contract notices, professional registers and company websites
+From referral partners who have introduced you to us
+Automatically, when you visit our website
+SECTION E — PURPOSES AND LAWFUL BASES
+Ref
+Purpose
+Lawful basis
+E.1
+Responding to an enquiry and preparing a proposal
+Legitimate interests — responding to a request for our services
+E.2
+Onboarding, conflict checking and client verification
+Legitimate interests — managing our business and avoiding conflicts
+E.3
+Delivering the engagement, including drafting and reviewing submissions
+Performance of a contract, or legitimate interests where the contract is with the organisation rather than the individual
+E.4
+Corresponding with you about the engagement
+Performance of a contract, or legitimate interests
+E.5
+Invoicing, credit control and accounting
+Performance of a contract, and legal obligation
+E.6
+Keeping engagement records for audit, insurance and defence of claims
+Legitimate interests, and legal obligation for statutory records
+E.7
+Engaging and managing associates and suppliers
+Performance of a contract, and legitimate interests
+E.8
+Sending occasional updates about our services to business contacts
+Legitimate interests, or consent where required
+E.9
+Operating and securing our website
+Legitimate interests
+E.10
+Investigating and responding to complaints
+Legitimate interests, and legal obligation where a regulator is involved
+Where we rely on legitimate interests, we have considered the effect on you and are satisfied that our interests do not override your rights. You may ask us for our assessment at any time.
+SECTION F — SPECIAL CATEGORY AND CRIMINAL OFFENCE DATA
+We do not routinely process special category data. Submission material occasionally contains it — for example workforce diversity statistics, accessibility adjustments, or records relating to health and safety. Where that occurs we process it only on the client's instruction, only to the extent required by the tender, and we rely on the client's own lawful basis and Article 9 condition.
+Where a submission requires information about criminal convictions, including exclusion-ground declarations under the Procurement Act 2023, we record only what the client states and only for the purposes of that submission.
+SECTION G — WHEN WE ACT AS A PROCESSOR
+Where we handle personal data that belongs to a client and we do so only on their documented instructions — typically personnel details supplied for inclusion in a submission — we act as a processor and the client is the controller. In those circumstances:
+We process the data only as instructed
+We enter into terms meeting Article 28 of the UK GDPR before processing begins
+We assist the client with data subject requests and with breach notification
+We return or delete the data at the end of the engagement, at the client's election
+If you are an individual whose data has been given to us by a client, the client's own privacy notice governs that processing. We will pass any request you make to them.
+SECTION H — WHO WE SHARE IT WITH
+Recipient
+Reason
+Our client, where you are a referee, authority contact or named individual
+To prepare and submit the tender
+Contracting authorities
+Only through the client, as part of a submission the client approves and submits
+Cloud storage, email and document providers
+To operate our business
+Our accountant
+Bookkeeping, statutory accounts and tax
+Our insurers and professional advisers
+Where a claim, dispute or legal obligation requires it
+Vetted associates
+Where they work on your engagement, under written confidentiality terms
+Regulators, courts and law enforcement
+Where we are legally required to disclose
+We do not sell personal data and we do not share it for third-party marketing.
+SECTION I — INTERNATIONAL TRANSFERS
+Our systems are hosted in [HOSTING LOCATION]. Where a supplier processes data outside the United Kingdom, we rely on UK adequacy regulations, or on the International Data Transfer Agreement or the UK Addendum to the EU standard contractual clauses, supported by a transfer risk assessment. Details are available on request.
+SECTION J — HOW LONG WE KEEP IT
+We keep personal data only as long as we need it. Our Retention and Disposal Schedule sets the periods in full. In summary:
+Record
+Period
+Engagement files and submissions
+[ENGAGEMENT RETENTION] from the end of the engagement
+Accounting and tax records
+Six years from the end of the accounting period
+Enquiries that do not become engagements
+[ENQUIRY RETENTION]
+Marketing contact records
+Until you object or withdraw consent, reviewed every [MARKETING REVIEW PERIOD]
+Complaints records
+[COMPLAINTS RETENTION] from closure
+Associate records
+[ASSOCIATE RETENTION] from the end of the relationship
+SECTION K — HOW WE PROTECT IT
+Access is limited to those who need it. Devices and accounts are protected by multi-factor authentication. Data is encrypted in transit and at rest. We maintain the technical controls required by Cyber Essentials, hold certificate [CYBER ESSENTIALS CERTIFICATE NUMBER], and operate a documented Information Handling Procedure covering classification, transfer and disposal.
+SECTION L — YOUR RIGHTS
+Subject to the conditions in the legislation, you have the right to:
+Be told how your data is used, which this notice does
+Obtain a copy of the personal data we hold about you
+Have inaccurate data corrected
+Have data erased in certain circumstances
+Restrict how we use your data
+Object to processing based on legitimate interests, including profiling
+Object to direct marketing at any time, with no exceptions
+Receive certain data in a portable format
+Withdraw consent, where consent is the basis we rely on
+To exercise any right, contact [DATA PROTECTION EMAIL]. We respond within one month, extendable by two further months for complex requests, and will tell you if an extension applies. We do not charge a fee unless a request is manifestly unfounded or excessive.
+SECTION M — MARKETING
+We may send occasional updates to business contacts about our services. Every message includes an unsubscribe link, and you can opt out at any time by contacting us. We do not send marketing to individuals at consumer email addresses without consent.
+SECTION N — WEBSITE AND COOKIES
+Our website uses [COOKIE TYPES]. Non-essential cookies are set only with your consent, which you can change at any time through [COOKIE SETTINGS ROUTE]. Analytics data is used only to understand how the site is used.
+SECTION O — CHANGES TO THIS NOTICE
+We review this notice at least annually and on any material change to how we handle personal data. The current version and its date appear at the top of this document.
+SECTION P — CONTACT AND COMPLAINTS
+Contact [DATA PROTECTION LEAD NAME] at [DATA PROTECTION EMAIL], or write to us at [REGISTERED OFFICE ADDRESS].
+If you are unhappy with how we have handled your data, please tell us first so that we can put it right. You also have the right to complain to the Information Commissioner's Office at ico.org.uk, by telephone on 0303 123 1113, or by writing to Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF. You do not have to complain to us before approaching the ICO.
+
+Document Owner: [DOCUMENT OWNER NAME], [DOCUMENT OWNER ROLE] | Version: [VERSION NUMBER] | Last Reviewed: [LAST REVIEWED DATE] | Next Review Date: [NEXT REVIEW DATE]

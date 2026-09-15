@@ -1,0 +1,202 @@
+
+PUBLIC-FACING
+WEBSITE AND PORTAL DOCUMENTS
+MARHANA & CO CONSULTING LTD
+Part 1: Website Privacy Notice · Part 2: Cookie Policy · Part 3: Website Terms of Use · Part 4: Client Portal Terms of Use
+
+DOCUMENT OWNER
+[DOCUMENT OWNER NAME], [DOCUMENT OWNER ROLE]
+VERSION
+[VERSION NUMBER]
+STATUS
+DRAFTING FRAMEWORK — NOT FOR PUBLICATION UNTIL REVIEWED BY A QUALIFIED SOLICITOR AND VERIFIED AGAINST THE ACTUAL SITE
+Note before publication. Parts 1 and 2 must be checked against what the website actually does. A privacy notice describing processing that does not occur, or omitting processing that does, is itself a compliance failure. Inspect the live site for analytics tags, embedded fonts, embedded video, chat widgets, social pixels and form handlers before publishing.
+
+PART 1 — WEBSITE PRIVACY NOTICE
+Last updated: [DATE]
+1.1 Who we are
+Marhana & Co Consulting Ltd is a company registered in England and Wales under company number [●], with its registered office at [●]. We provide public-sector bid and tender consultancy services.
+For the purposes of data protection law we are the controller of the personal data described in this notice.
+We are registered with the Information Commissioner's Office under registration number [●].
+If you have any question about this notice or about how we handle your personal data, contact us at [PRIVACY EMAIL], or write to us at the address above.
+1.2 What this notice covers
+This notice explains how we handle personal data collected through our website and through our business development, marketing and client relationship activities.
+It does not cover personal data that a client sends us for inclusion in a tender submission. For that data our client is the controller and we act on their instructions as a processor. If you are an employee or referee of one of our clients and your details appear in a submission we have helped prepare, you should contact that organisation. We will pass on any request we receive.
+1.3 What we collect and why
+What we collect
+When
+Why
+Our lawful basis
+Name, organisation, role, email, telephone, and anything you tell us about your requirement
+When you complete a contact or enquiry form, email us, or speak to us
+To respond to your enquiry and to consider whether we can help
+Legitimate interests (responding to an enquiry you made) and, once we are engaged, performance of a contract
+Name, organisation, role, business contact details, correspondence, engagement records
+During an engagement
+To deliver and administer the engagement, to invoice, and to keep our records
+Performance of a contract; legal obligation for accounting records
+Business contact details and your interactions with our emails
+If you subscribe to updates, or if we contact you as a business contact about services similar to those you have obtained from us
+To send sector updates and information about our services
+Legitimate interests, subject to your right to object at any time
+Name, contact details, business details, insurance and qualification records
+If you apply to join our associate network
+To assess and manage the engagement
+Legitimate interests; performance of a contract; legal obligation
+Usage data about your visit, including pages viewed and approximate location derived from IP address
+When you visit our website, if you consent to analytics cookies
+To understand how the site is used and to improve it
+Consent
+Technical data necessary to serve the site securely
+Every visit
+To operate the site and protect it against abuse
+Legitimate interests
+We do not collect special category data through our website, and we ask that you do not send it to us through the contact form.
+1.4 Who we share it with
+We share personal data with the service providers who support our business, each of whom acts under contract and may use the data only for the purposes we specify:
+our cloud storage, email and document collaboration providers;
+our backup provider;
+our accounting and invoicing provider and our accountant;
+our website host and, where you consent, our analytics provider;
+our professional indemnity insurers and professional advisers, where necessary;
+associates engaged on a specific engagement, under written contract; and
+HM Revenue and Customs, Companies House and other authorities where we are required by law to do so.
+We do not sell personal data. We do not share it for anyone else's marketing.
+Where an engagement requires us to work with a client's consortium partners, we will share information as set out in the engagement documentation.
+1.5 Where your data is held
+We store personal data on systems located in [THE UNITED KINGDOM / THE UNITED KINGDOM AND THE EUROPEAN ECONOMIC AREA]. Where any provider processes data outside the United Kingdom, we ensure an appropriate safeguard is in place, being either an adequacy regulation or the International Data Transfer Agreement or Addendum. Details are available on request.
+1.6 Artificial intelligence
+We use assistive technology in our work, principally for scanning published opportunities, extracting requirements from published tender documents, and checking compliance and readability. We do not permit personal data or confidential client or contracting authority information to be entered into any system that would use it to train a model, and we contract with our providers on that basis. All persuasive content and all final review is written and checked by a person. We do not use automated decision-making that produces legal or similarly significant effects.
+1.7 How long we keep it
+Data
+Retention
+Enquiries that do not lead to an engagement
+2 years from last contact
+Client engagement records
+6 years from the end of the engagement
+Accounting and tax records
+6 years from the end of the accounting period
+Marketing contacts
+Until you object, or 2 years' inactivity
+Associate records
+6 years from the last engagement
+Website analytics
+[PERIOD]
+1.8 Your rights
+You have the right to ask us for a copy of your personal data; to have inaccurate data corrected; to have data erased in certain circumstances; to restrict how we use it; to receive it in a portable format where we rely on consent or contract and process it by automated means; to object to processing based on legitimate interests; and to object to direct marketing at any time, which is an absolute right.
+Where we rely on your consent, you may withdraw it at any time. Withdrawal does not affect processing carried out before withdrawal.
+To exercise any right, contact [PRIVACY EMAIL]. We will respond within one month. There is no charge unless a request is manifestly unfounded or excessive.
+If you are unhappy with how we have handled your personal data, please tell us first so that we can put it right. You also have the right to complain to the Information Commissioner's Office at ico.org.uk, or by telephone on 0303 123 1113.
+1.9 Changes
+We may update this notice. The date at the top shows when it was last changed. Where a change is material we will draw it to the attention of those affected.
+
+PART 2 — COOKIE POLICY
+Last updated: [DATE]
+2.1 What cookies we use
+Cookies and similar technologies are small files placed on your device. Regulation 6 of the Privacy and Electronic Communications (EC Directive) Regulations 2003 requires your consent before we place any cookie that is not strictly necessary to provide the service you have requested. Analytics cookies are not strictly necessary.
+Category
+Purpose
+Consent required
+Examples on this site
+Duration
+Strictly necessary
+Security, load balancing, remembering your cookie choices
+No
+[●]
+[●]
+Analytics
+Understanding how the site is used
+Yes
+[●]
+[●]
+Functional
+Remembering preferences
+Yes
+[●]
+[●]
+Marketing and tracking
+Advertising and cross-site tracking
+Yes
+[NONE / SPECIFY]
+[●]
+[Complete this table from an actual inspection of the live site. Embedded fonts, embedded video players, map embeds and chat widgets frequently set cookies or transmit IP addresses to third parties, and each must be listed.]
+2.2 Your choices
+When you first visit our site you will be asked whether you accept non-essential cookies. Rejecting them must be as easy as accepting them, and nothing on our site is conditional on your acceptance.
+You can change your choice at any time using [LINK TO PREFERENCE CENTRE], and you can block or delete cookies through your browser settings, though doing so may affect how the site works.
+2.3 More information
+For more about how we handle personal data, see our Privacy Notice.
+
+PART 3 — WEBSITE TERMS OF USE
+Last updated: [DATE]
+3.1 Who we are and how to contact us
+This website is operated by Marhana & Co Consulting Ltd, company number [●], registered office [●]. Contact: [EMAIL].
+3.2 By using our site you accept these terms
+By using our site you confirm that you accept these terms of use and agree to comply with them. If you do not agree, do not use the site. We may amend these terms at any time and the version in force is the one displayed when you use the site.
+3.3 The content on our site is not advice
+The content on our site is provided for general information only. It is not advice on which you should rely, and it is not legal, financial, procurement or professional advice of any kind. You must obtain professional or specialist advice before taking, or refraining from, any action on the basis of the content on our site.
+Although we make reasonable efforts to keep the information on our site up to date, we make no representation, warranty or guarantee, express or implied, that it is accurate, complete or current. Procurement law, policy and guidance change frequently, and content that was accurate when published may not remain so.
+3.4 Our liability
+Nothing in these terms excludes or limits our liability for death or personal injury caused by our negligence, for fraud or fraudulent misrepresentation, or for any other liability that cannot lawfully be excluded or limited.
+To the extent permitted by law, we exclude all conditions, warranties and other terms implied by statute or common law in relation to your use of our site.
+We are not liable to any user for any loss or damage, whether in contract, tort (including negligence), breach of statutory duty or otherwise, arising out of or in connection with use of, or inability to use, our site or reliance on any content on it. In particular we are not liable for loss of profits, loss of business, loss of contract or opportunity, business interruption, loss of goodwill, or any indirect or consequential loss.
+Nothing on our site constitutes an offer capable of acceptance, and no engagement arises unless and until our Terms of Engagement have been issued and accepted in writing.
+3.5 Intellectual property
+We are the owner or licensee of all intellectual property rights in our site and in the material published on it. Those works are protected by copyright laws and treaties. All such rights are reserved.
+You may print off one copy and download extracts of any page for your personal use. You must not modify any copy, use any illustration or graphic separately from its accompanying text, or use any content for commercial purposes without our licence. Our status as author must always be acknowledged.
+You must not use any of our content, templates or methodology to provide bid, tender or proposal services to any third party.
+3.6 Prohibited use
+You must not misuse our site by knowingly introducing any virus or other malicious material, attempting to gain unauthorised access to it or to any server or database connected to it, or attacking it by means of a denial-of-service attack. We will report any such breach to the relevant law enforcement authorities.
+You must not use automated means to scrape, harvest or extract content from our site without our written consent.
+3.7 Links
+Where our site contains links to other sites, those links are provided for information only. We have no control over the contents of those sites and accept no responsibility for them or for any loss arising from your use of them.
+You may link to our home page provided you do so fairly and legally and in a way that does not suggest any association or endorsement. We may withdraw linking permission at any time.
+3.8 Governing law
+These terms, and any dispute or claim (including non-contractual disputes or claims) arising out of or in connection with them, are governed by the law of England and Wales, and the courts of England and Wales have exclusive jurisdiction.
+
+PART 4 — CLIENT PORTAL TERMS OF USE
+For adoption when the client portal is launched. Do not publish before the portal exists.
+Last updated: [DATE]
+4.1 Application and precedence
+4.1.1 These terms govern access to and use of the client portal operated by Marhana & Co Consulting Ltd (the "Portal").
+4.1.2 The Portal is provided as an adjunct to an engagement governed by our Terms of Engagement (the "Master Terms"). Defined terms bear the meanings given there. In the event of conflict between these Portal terms and the Master Terms, the Master Terms prevail, save in relation to the operation and availability of the Portal itself, where these terms prevail.
+4.1.3 The Portal is made available to clients with a current engagement or retainer only. Access is not a separate service and no separate fee is charged for it.
+4.2 Accounts and access
+4.2.1 We will issue named user accounts to the individuals nominated by you in writing. Each account is personal to the named individual.
+4.2.2 You shall not share credentials, permit any other person to use an account, or create a generic or shared account.
+4.2.3 Multi-factor authentication is mandatory on every account and may not be disabled.
+4.2.4 You shall notify us immediately, and in any event within twenty-four hours, if you become aware of any unauthorised access, any suspected compromise, or any change in the individuals who should have access, including any leaver.
+4.2.5 You are responsible for all activity conducted through accounts issued to you, including activity by a person to whom you have improperly granted access.
+4.2.6 We may suspend or revoke any account immediately where we reasonably suspect misuse, compromise, or breach of these terms, and shall notify you promptly where we do so.
+4.3 Permitted use
+4.3.1 The Portal may be used only for the purposes of your engagement with us: viewing engagement status, deadlines and opportunity summaries, exchanging documents with us, and accessing deliverables.
+4.3.2 You shall not:
+4.3.2.1 use the Portal to store or transmit anything unlawful, infringing or malicious;
+4.3.2.2 upload any material containing malware, or any material you are not entitled to disclose to us;
+4.3.2.3 upload special category personal data, criminal offence data, payment card data, or personal data beyond what is necessary for the engagement;
+4.3.2.4 attempt to access any area, account or engagement other than your own;
+4.3.2.5 probe, scan, penetration test or otherwise test the security of the Portal without our prior written consent;
+4.3.2.6 scrape, extract, copy or reverse engineer any Company Material, template, scorecard or methodology accessible through the Portal, or use automated means to extract content;
+4.3.2.7 use the Portal to provide services to any third party; or
+4.3.2.8 remove or alter any proprietary notice or watermark.
+4.3.3 The restrictions on use of Company Materials at Section H of the Master Terms apply to everything you access through the Portal.
+4.4 Availability and support
+4.4.1 We aim to make the Portal available at all times but do not warrant uninterrupted or error-free availability. The Portal is provided on an "as is" and "as available" basis.
+4.4.2 We may suspend access for maintenance, and will give reasonable notice where the maintenance is planned.
+4.4.3 The Portal is a convenience, not a delivery mechanism of record. You must not rely on the Portal for the receipt of any deliverable, the communication of any deadline, or the giving of any approval where a deadline is imminent. Where anything is time-critical, use email and confirm receipt. We have no liability for any deadline missed, or any deliverable not received, by reason of the unavailability of the Portal.
+4.4.4 Support is provided during business hours at [SUPPORT CONTACT]. We do not provide out-of-hours support.
+4.5 Content, retention and export
+4.5.1 Documents you upload remain your property, and Section H of the Master Terms governs ownership of everything else.
+4.5.2 We may delete content from the Portal [RETENTION PERIOD] after the close of the relevant engagement. This does not affect the separate retention of the engagement file under paragraph G.5 of the Master Terms.
+4.5.3 You are responsible for downloading and retaining your own copy of any deliverable. The Portal is not a backup or archive service and should not be treated as one.
+4.5.4 On termination of your engagement, access will be withdrawn on [PERIOD] notice, and you should export anything you wish to keep before that date.
+4.6 Data protection and security
+4.6.1 Personal data uploaded to the Portal is processed in accordance with the Data Processing Agreement at Part 2 of the Terms of Engagement Addenda, and the Portal provider is a sub-processor listed there.
+4.6.2 You shall minimise the personal data you upload and shall redact anything not required for the engagement.
+4.6.3 We maintain the technical and organisational measures set out in that Agreement in respect of the Portal.
+4.7 Liability
+4.7.1 Our liability arising out of or in connection with the Portal is subject to Section F of the Master Terms and counts towards the same cap. The Portal does not create a separate cap.
+4.7.2 Without prejudice to the foregoing, we have no liability for: loss of data you have not separately retained; any consequence of your failure to notify us of a leaver whose access should have been revoked; any use of an account by a person to whom you granted access; or any deadline missed in reliance on the Portal contrary to paragraph 4.4.3.
+4.8 Changes and termination
+4.8.1 We may modify or discontinue the Portal, or any feature of it, on reasonable notice. Discontinuation of the Portal does not affect the underlying engagement, which continues under the Master Terms.
+4.8.2 We may amend these Portal terms on notice given through the Portal or by email. Continued use after the effective date constitutes acceptance.
+4.8.3 These terms, and any dispute or claim (including non-contractual disputes or claims) arising out of or in connection with them, are governed by the law of England and Wales, and the courts of England and Wales have exclusive jurisdiction.

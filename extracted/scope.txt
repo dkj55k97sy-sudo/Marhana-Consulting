@@ -1,0 +1,303 @@
+
+CONFIDENTIAL
+SCOPE SCHEDULES LIBRARY
+MARHANA & CO CONSULTING LTD
+Standard scope-of-services wording for each service line, for insertion at paragraph B.1.1 of the Terms of Engagement and at paragraph 1 of the short-form engagement letter
+
+DOCUMENT OWNER
+[DOCUMENT OWNER NAME], [DOCUMENT OWNER ROLE]
+VERSION
+[VERSION NUMBER]
+STATUS
+DRAFTING FRAMEWORK — NOT FOR ISSUE UNTIL REVIEWED BY A QUALIFIED SOLICITOR
+
+HOW TO USE THIS LIBRARY
+Paragraph B.1.1 of the Terms of Engagement is a list of [SERVICE ITEM] placeholders. Every engagement requires that scope to be written. Writing it freehand each time produces inconsistency, and inconsistent scope is where fee disputes start — "I thought that was included" is the single most common argument in professional services, and it is won or lost by what was written before the work began.
+For each service line below you will find five blocks. Copy them across:
+Scope wording → paragraph B.1.1 of the Terms, or paragraph 1 of the short-form letter
+Deliverable → the engagement particulars
+Client must supply → paragraph B.1.1.5 and the Information Deadline at A.1.13
+Service-specific exclusions → paragraph B.2.1.9, in addition to the standard exclusions at B.2.1.1 to B.2.1.8, which apply to every engagement without exception
+Assumptions → include these in the engagement particulars; each one is a variation trigger under B.4.2 if it turns out to be wrong
+Two rules. First, never delete the standard exclusions at B.2.1.1 to B.2.1.8 for any engagement — they are the basis on which the fee is calculated and paragraph B.2.2 says so. Second, if a client asks for something not in the scope wording below, it is a variation under B.4.1 and needs quoting before it is done.
+
+1. BID FIT SCORE
+Fee band: £150–£350 · Short-form letter suitable: Yes · Personal data involved: Business contacts only
+Scope wording
+Review of the published procurement documentation for the Opportunity, being the contract notice, specification, evaluation criteria and weightings, and any published clarification responses available at the date of instruction.
+Assessment of the Client's stated capability, accreditation status and track record against the published qualification requirements and evaluation criteria.
+Assessment of the financial thresholds, contract value, duration and stated risk profile against the Client's stated financial standing.
+Assessment of the likely competitive field by reference to publicly available award history for comparable contracts, where available.
+Delivery of a written scorecard in the Consultant's standard format, comprising a numerical fit score, a go or no-go recommendation, the strengths the Client should emphasise, and the material gaps requiring attention before submission.
+One round of written clarification questions from the Client on the scorecard, answered in writing.
+Deliverable: Written scorecard, [●] pages, in PDF.
+Client must supply: Capability statement or company overview; list of accreditations held with expiry dates; insurance levels held; three most relevant past contracts with values and client names; latest filed accounts or a statement of turnover; the opportunity reference or portal link.
+Service-specific exclusions
+The Consultant does not verify any accreditation, insurance level, financial figure or past performance claim supplied by the Client. The fit score is an opinion formed upon the information available at the date of assessment and upon the documentation published at that date. A go recommendation is not an assurance of success and a no-go recommendation is not an assurance of failure. The Consultant does not monitor the Opportunity after delivery of the scorecard and is not responsible for notifying the Client of any subsequent clarification, amendment or extension issued by the Contracting Authority.
+Assumptions: The procurement documentation is publicly accessible without portal registration, or the Client supplies it. The Opportunity is a single lot; multiple lots are scored separately and charged separately.
+
+2. BID READINESS ASSESSMENT
+Fee band: £250–£500 · Short-form letter suitable: Yes · Personal data involved: Business contacts only, unless personnel records are supplied
+Scope wording
+Review of the Client's accreditations, certifications, policies, insurances and financial standing against the qualification requirements typically applied in [SECTOR] public procurement.
+Review of the Client's existing policy suite against the policy documents commonly required at selection stage, identifying which exist, which are out of date, and which are absent.
+Identification of the gaps which would prevent or prejudice qualification, ranked by the likelihood of their being required.
+A written readiness report setting out the position, the gaps, the remedial actions required, and an indicative order in which they should be addressed.
+One round of written clarification questions from the Client on the report, answered in writing.
+Deliverable: Written readiness report, [●] pages, with a gap register in tabular form.
+Client must supply: All current policies; all accreditation certificates with expiry dates; insurance schedules; latest filed accounts; organisational structure; details of quality, environmental and health and safety management arrangements.
+Service-specific exclusions
+The Consultant reviews the documents supplied and does not audit, inspect or verify whether the arrangements they describe are in fact operated. The assessment addresses typical requirements in the stated sector and is not a determination that the Client will qualify for any particular procurement. The Consultant does not draft any policy, obtain any accreditation or effect any remedial action identified, each of which is a separate service quoted separately.
+Assumptions: One sector. Assessment against typical rather than named-procurement requirements; assessment against a specific published procurement is a Bid Fit Score and is charged separately.
+
+3. POST-TENDER DEBRIEF ANALYSIS
+Fee band: £200–£450 · Short-form letter suitable: Yes · Personal data involved: Business contacts only
+Scope wording
+Review of the assessment summary or debrief provided by the Contracting Authority, together with the Client's submitted response and the published evaluation criteria and weightings.
+Analysis of the score awarded against each criterion and sub-criterion, identifying where marks were lost and, so far as the assessment summary permits, why.
+Identification of the evidence, content or capability which would have been required to score more highly against each criterion where marks were lost.
+A written improvement plan setting out the findings, ranked by the number of marks recoverable, together with the actions required before the next comparable submission.
+One round of written clarification questions from the Client on the plan, answered in writing.
+Deliverable: Written improvement plan, [●] pages, with a criterion-by-criterion analysis table.
+Client must supply: The full assessment summary or debrief; the submitted response in the form submitted; the published evaluation criteria and weightings; any correspondence with the Contracting Authority about the outcome.
+Service-specific exclusions
+The Consultant does not advise upon whether any ground of challenge exists, upon the merits or conduct of any procurement challenge, upon any standstill period, or upon any application to the Contracting Authority for further information. Those are matters of legal advice upon which the Client must take independent advice, and the Client is reminded that the period within which a procurement challenge may be brought is short. The Consultant does not correspond with the Contracting Authority on the Client's behalf. The analysis is limited to the information contained in the assessment summary supplied; where the summary is brief or uninformative, the analysis will be correspondingly limited and no reduction in the fee arises.
+Assumptions: The assessment summary is provided in full. One submission, one lot.
+
+4. BID REVIEW AND REWRITE
+Fee band: £250–£600 · Short-form letter suitable: No · Personal data involved: Likely — issue the full Terms and DPA
+Scope wording
+Critical review of the Client's existing draft response against the published evaluation criteria, weightings, response requirements, word or character limits and formatting requirements.
+Compliance check identifying any question or sub-question not answered, any requirement not addressed, and any breach of a stated limit or format.
+Rewriting and strengthening of the draft to address the evaluation criteria, improve the evidencing of claims made, and comply with the stated requirements.
+Delivery of a revised draft in editable format, together with a summary of the material changes made and of any evidence gap the Client must close.
+[NUMBER] rounds of revision following consolidated written comment from the Client.
+Deliverable: Revised draft in [FORMAT], plus a change summary.
+Client must supply: The existing draft in editable format; the full procurement documentation including evaluation criteria and response requirements; all evidence relied upon in the draft; any clarification responses issued by the Contracting Authority.
+Service-specific exclusions
+The Consultant rewrites and strengthens the content supplied. It does not originate new factual content, new evidence or new capability claims, and any assertion in the revised draft originates with the Client. Where the existing draft is materially incomplete, such that rewriting amounts in substance to authorship, the Consultant shall notify the Client and the engagement shall be requoted as Tender and PQQ Writing before further work is undertaken. Rewriting does not extend to any section not identified in the engagement particulars.
+Assumptions: The draft addresses each question in substance. Word limits are as published. The number of questions is [●] and materially more will trigger a variation under B.4.2.
+
+5. TENDER AND PQQ WRITING
+Fee band: £500–£2,000 · Short-form letter suitable: No · Personal data involved: Yes — full Terms and DPA required
+Scope wording
+Review of the full procurement documentation and preparation of a compliance matrix mapping every question, sub-question, weighting, word limit and evidence requirement.
+A structured information-gathering session with the Client of up to [DURATION], to establish the factual content, evidence and capability claims to be relied upon.
+Authorship of the response to each question identified in the compliance matrix, drafted against the published evaluation criteria and within the stated limits.
+Mapping of the evidence supplied by the Client to each criterion, and identification in writing of any evidence gap the Client must close before submission.
+Delivery of a complete draft in the format required by the Contracting Authority, not later than the internal delivery deadline stated in the engagement particulars.
+[NUMBER] rounds of revision following consolidated written comment from the Client.
+A final compliance check of the approved response against the compliance matrix before release to the Client for submission.
+Deliverable: Complete draft response in [FORMAT], plus the compliance matrix and an evidence gap register.
+Client must supply: The full procurement documentation and all clarification responses; policies, accreditations, insurances and certifications to be relied upon; personnel details and CVs where required; case studies and referee details; financial information required by the response; pricing, which the Client alone determines; approval of the final response in writing.
+Service-specific exclusions
+The Consultant records the Client's statements as to its capability, capacity, resources, accreditations and past performance and does not verify any of them. The Consultant does not determine, recommend or approve the Client's price or commercial terms and expresses no opinion upon them. The Consultant does not complete any portal field, hold portal credentials or submit the response. The scope is limited to the questions identified in the compliance matrix at the date of instruction; where the Contracting Authority subsequently issues additional questions, amends the specification or extends the deadline, paragraph B.4.2 applies. Method statements requiring specification-level technical, clinical or engineering content are drafted from content supplied by the Client and are not originated by the Consultant.
+Assumptions: Number of questions [●] and aggregate word count [●]. Single lot. Client responds to requests for information within [●] working days. Deadline as published at the date of instruction.
+
+6. SOCIAL VALUE STATEMENTS
+Fee band: £300–£900 · Short-form letter suitable: No · Personal data involved: Possibly
+Scope wording
+Review of the social value questions, the policy themes and outcomes applied by the Contracting Authority, and the stated weightings and evaluation methodology.
+A structured session with the Client of up to [DURATION] to establish the social value commitments the Client is able and willing to make and to deliver.
+Authorship of the social value response, mapped to the themes, outcomes and measures applied by the Contracting Authority and to the local priorities identified in the procurement documentation.
+Presentation of each commitment with a stated measure, a target and a proposed method of reporting.
+[NUMBER] rounds of revision following consolidated written comment from the Client.
+Deliverable: Social value response in [FORMAT], plus a commitments register listing each commitment, its measure and its target.
+Client must supply: Existing social value activity and evidence; local employment, training and supply chain arrangements; charitable and community activity; environmental measures; confirmation of which commitments the Client is willing and able to deliver.
+Service-specific exclusions
+The Client is reminded that social value commitments made at bid stage become contractual obligations on award and are reported against for the life of the contract. The Consultant drafts the commitments the Client instructs it to make. The Consultant does not assess, and gives no opinion upon, whether any commitment is deliverable, affordable or achievable, and the Client alone is responsible for satisfying itself of that before approving the response. The Consultant does not calculate social value in monetary terms, does not apply any proxy valuation framework, and does not calculate or verify greenhouse gas emissions or carbon figures.
+Assumptions: The Contracting Authority's themes and measures are published. The Client has decided what it is willing to commit to before the session at item 2.
+
+7. FINANCIAL AND COSTED BUSINESS CASE
+Fee band: £300–£800 · Short-form letter suitable: No · Personal data involved: Unlikely
+Scope wording
+Review of the financial, costing and commercial questions within the procurement documentation and of the pricing schedule or model issued by the Contracting Authority.
+Authorship of the narrative financial and costing sections of the response, presenting the figures supplied by the Client against the criteria applied by the Contracting Authority.
+Structuring of the costed business case narrative, including the presentation of cost drivers, assumptions, value for money and, where required, social value cost attribution.
+Independent internal review of the completed financial sections against the published requirements by the Consultant's Finance and Sector Lead.
+[NUMBER] rounds of revision following consolidated written comment from the Client.
+Deliverable: Financial and costing narrative sections in [FORMAT].
+Client must supply: All figures, rates, costs, margins and pricing; the completed pricing schedule; the assumptions underlying each figure; latest accounts; confirmation in writing that the figures are accurate and deliverable.
+Service-specific exclusions
+The Consultant does not calculate, derive, model, check or verify any figure. All figures originate with the Client, are recorded as supplied, and are presented without adjustment. The Consultant does not provide accountancy, audit, tax or investment advice, does not prepare or certify any financial statement, and does not opine upon the Client's financial standing. The Consultant does not determine or recommend the price tendered, does not advise upon whether any price is competitive, sustainable or abnormally low, and expresses no opinion upon margin, cost recovery or profitability. The Client is responsible for the arithmetic accuracy of every figure and every pricing schedule submitted.
+Assumptions: The Client's figures are final at the Information Deadline. Recalculation following a change of figures is a variation under B.4.1.
+
+8. ACCREDITATION SUPPORT
+Fee band: £300–£700 · Short-form letter suitable: No · Personal data involved: Likely — personnel and training records
+Scope wording
+Review of the requirements of the accreditation scheme concerned, being [CHAS / CONSTRUCTIONLINE / SAFECONTRACTOR / SMAS / OTHER], against the Client's existing documentation.
+Identification of the evidence and documentation required and of what the Client holds, what is out of date and what is absent.
+Authorship or restructuring of the narrative documentation required by the scheme, drafted from the arrangements and evidence supplied by the Client.
+Compilation of the evidence supplied into the structure and order required by the scheme.
+Delivery of the completed evidence pack for the Client to submit.
+[NUMBER] rounds of revision following assessor feedback, where feedback is received within [PERIOD] of submission.
+Deliverable: Completed evidence pack in the format required by the scheme.
+Client must supply: All existing policies, procedures and records; personnel qualifications and training records; insurance schedules; accident and incident records; risk assessments and method statements; equipment and maintenance records; scheme login where the Client requires the Consultant to view scheme guidance.
+Service-specific exclusions
+The Consultant does not submit the application, hold scheme credentials or correspond with the scheme assessor. The Consultant does not audit, inspect or verify whether the arrangements described in the documentation are in fact operated, and does not certify compliance with any standard. The Consultant gives no warranty that accreditation will be granted, that being a determination for the scheme assessor. The Consultant does not create any underlying arrangement, record or system which the Client does not already operate; where evidence does not exist, it cannot be compiled, and the Client is responsible for putting the arrangement in place. The Consultant does not provide health and safety advice, competent person services under regulation 7 of the Management of Health and Safety at Work Regulations 1999, or advice upon compliance with any statutory duty.
+Assumptions: One scheme, one membership level. Resubmission following a failed assessment is a variation unless caused by the Consultant's error.
+
+9. EVIDENCE BANK DEVELOPMENT
+Fee band: £800–£2,000 · Short-form letter suitable: No · Personal data involved: Yes — full Terms and DPA required
+Scope wording
+Design of a structured library architecture organised against the evaluation criteria and question types recurring in [SECTOR] public procurement.
+Audit of the Client's existing policies, accreditations, case studies, personnel records, insurance documentation and social value evidence, and mapping of each to the criteria it supports.
+Identification of the evidence gaps which recur across common evaluation criteria and which the Client should close.
+Compilation of the Client's existing material into the library structure, indexed and mapped to the criteria.
+Authorship of [NUMBER] standard reusable responses to recurring question types, drafted from the Client's material.
+A written maintenance protocol setting out how the library is kept current, including accreditation expiry monitoring and case study refresh.
+Handover session of up to [DURATION].
+Deliverable: Structured evidence library in [FORMAT], criteria mapping index, gap register, standard response set, maintenance protocol.
+Client must supply: All policies, certificates, insurance schedules, case studies, personnel records, CVs, training records, social value evidence and past submissions; a nominated individual to maintain the library after handover.
+Service-specific exclusions
+Intellectual property is split. The content of the library remains the Client's; the structure, taxonomy, indexing methodology, criteria mapping and templates by which it is organised are Company Materials, remain the Consultant's, and are licensed to the Client for its own use only in accordance with paragraph H.6 of the Terms of Engagement. The Client may not extract that structure for use with or by any third party, and may not use it to provide bid services to any person. The Consultant does not verify any document placed in the library, does not maintain the library after handover, and does not monitor accreditation expiry unless separately retained to do so. The Consultant does not create any policy or record the Client does not hold.
+Assumptions: Volume of existing material as inspected at the date of quotation. One sector. Library hosted on [PLATFORM] provided by the Client.
+
+10. FRAMEWORK APPLICATIONS
+Fee band: £800–£2,500 · Short-form letter suitable: No · Personal data involved: Yes — full Terms and DPA required
+Scope wording
+Review of the framework documentation, lot structure, qualification requirements and evaluation methodology, and preparation of a compliance matrix.
+Advice as to which lots the Client's stated capability and financial standing appear to address, by reference to the published requirements.
+A structured information-gathering session of up to [DURATION].
+Authorship of the response to each question in the compliance matrix, for the lots identified in the engagement particulars.
+Mapping of evidence to each requirement and identification of gaps to be closed.
+[NUMBER] rounds of revision following consolidated written comment.
+Final compliance check before release for submission.
+Deliverable: Complete framework application in [FORMAT], compliance matrix, evidence gap register.
+Client must supply: As for Tender and PQQ Writing, together with details of capacity, geographic coverage and delivery arrangements for each lot applied for.
+Service-specific exclusions
+The Consultant does not advise upon the commercial merits of framework participation, upon the volume of work likely to result, upon call-off arrangements, or upon the terms of the framework agreement itself, which is a matter of legal advice. A place on a framework does not guarantee any call-off, and the Consultant gives no indication as to the volume or value of work which may follow. Lots not identified in the engagement particulars are outside scope and are quoted separately. The Consultant does not verify whether the Client meets any financial or capacity threshold.
+Assumptions: [NUMBER] lots. Questions and word counts as published at the date of instruction.
+
+11. CONSORTIUM BID COORDINATION
+Fee band: £900–£2,500 · Short-form letter suitable: No · Use the Consortium Engagement Terms at file 02, not the standard Terms
+Scope wording
+Review of the procurement documentation and preparation of a compliance matrix identifying, for each question, which Member's information is required.
+Structuring of the consortium narrative, including the presentation of the structure, the allocation of responsibilities within the delivery model, and the combined capability.
+Coordination of the collection of evidence from each Member against the compliance matrix, and identification of gaps to the Lead Member.
+Authorship of the response, integrating the material supplied by each Member into a single consistent submission.
+Maintenance of a consolidated response tracker showing, for each question, the responsible Member and the status.
+[NUMBER] rounds of revision following consolidated written comment from the Lead Member.
+Final compliance check before release to the Lead Member for submission.
+Deliverable: Complete consortium response, compliance matrix, response tracker, gap register.
+Client must supply: Each Member's information by the Information Deadline; the Lead Member's written confirmation that every Member has approved the parts relating to it; confirmation that the Consortium Agreement is executed and in force.
+Service-specific exclusions
+The Consultant acts for the Consortium as a whole and not for any individual Member. The Consultant does not draft, review, advise upon or comment upon the Consortium Agreement or any teaming, subcontracting, profit-sharing, liability-sharing or exit arrangement between the Members, nor upon the appropriate structure of the Consortium, nor upon whether the Consortium or any Member satisfies any qualification, financial or capacity threshold, nor upon the aggregation of any such measure between Members, nor upon any issue arising under competition law. Each Member must take its own independent legal advice on all of those matters. Where a Member withdraws, paragraph D.5 of the Consortium Engagement Terms applies and consequential rework is charged additionally.
+Assumptions: [NUMBER] Members. Lead Member appointed and authorised. Consortium Agreement in force at the date of instruction. Each Member responds within [●] working days.
+
+12. CONTRACT MOBILISATION
+Fee band: £400–£1,200 · Short-form letter suitable: No · Personal data involved: Possibly
+Scope wording
+Extraction from the awarded contract of the reporting, evidencing, compliance and social value obligations falling on the Client, into a structured obligations register.
+Identification of the frequency, format, recipient and deadline applicable to each reporting obligation.
+Design of a reporting and evidencing framework enabling the Client to meet those obligations, including template report formats where required.
+Preparation of a mobilisation checklist covering the actions required before and at contract commencement.
+Handover session of up to [DURATION].
+Deliverable: Obligations register, reporting framework and templates, mobilisation checklist.
+Client must supply: The full executed contract including all schedules; the submitted response and all commitments made within it; details of internal responsibilities for delivery.
+Service-specific exclusions
+The Consultant does not advise upon the meaning, effect or enforceability of any contractual term, that being legal advice upon which the Client must take independent advice. The Consultant extracts and organises the obligations apparent on the face of the documents supplied and does not warrant that the register is exhaustive. The Consultant does not perform, operate or monitor any obligation, does not deliver any service under the contract, and does not report to the Contracting Authority on the Client's behalf. The Consultant does not advise upon staffing, TUPE, subcontracting, insurance or any operational matter arising on mobilisation.
+Assumptions: Contract executed and supplied in full. One contract. Mobilisation period of [●] weeks.
+
+13. SOCIAL VALUE DELIVERY REPORTING
+Fee band: £300–£600 per cycle · Short-form letter suitable: No · Personal data involved: Likely — beneficiary and employee data
+Scope wording
+Maintenance of the commitments register recording each social value commitment made at bid stage, its measure, its target and its reporting frequency.
+Collection from the Client, each reporting cycle, of the evidence of delivery against each commitment.
+Authorship of the periodic social value report in the format required by the Contracting Authority, presenting the evidence supplied against each commitment.
+Identification in writing of any commitment for which evidence has not been supplied, or against which delivery appears to be behind target.
+Delivery of the report to the Client not later than [PERIOD] before the reporting deadline.
+Deliverable: Periodic social value report per cycle, plus an updated commitments register.
+Client must supply: Evidence of delivery against each commitment by the date specified each cycle, including employment, training, apprenticeship, spend, volunteering and environmental data as applicable; confirmation of the accuracy of each figure.
+Service-specific exclusions
+The Consultant reports the evidence supplied. It does not deliver, procure, monitor or verify any social value outcome, and does not audit or check any figure or claim. Where evidence is not supplied by the date specified, the Consultant will report the commitment as unevidenced and shall have no liability for any consequence. The Consultant does not calculate social value in monetary terms, does not apply any proxy valuation framework such as the TOMs framework unless separately instructed and quoted, and does not calculate greenhouse gas emissions or carbon figures. The Client remains solely responsible for delivering its contractual social value commitments and for the accuracy of every report submitted in its name.
+Assumptions: [●] reporting cycles per year. Report format as required at the date of instruction; a change of format imposed by the Contracting Authority is a variation.
+
+14. RETAINER
+Scope is at Section R.C of the Retainer Schedule (file 03, Part 1). Do not duplicate it here. Note in particular that authorship is never included in the retainer fee and is always charged separately at the preferential rate.
+
+15. QUICK REFERENCE
+REF
+SERVICE
+FEE BAND
+SHORT-FORM LETTER
+DPA REQUIRED
+THE EXCLUSION THAT MATTERS MOST
+1
+Bid Fit Score
+£150–£350
+Yes
+No
+Opinion at a date; no post-delivery monitoring
+2
+Bid Readiness Assessment
+£250–£500
+Yes
+If personnel data
+Documents reviewed, arrangements not audited
+3
+Post-Tender Debrief Analysis
+£200–£450
+Yes
+No
+No advice on challenge; challenge limitation periods are short
+4
+Bid Review and Rewrite
+£250–£600
+No
+Likely
+No new content originated; requote as authorship if the draft is thin
+5
+Tender and PQQ Writing
+£500–£2,000
+No
+Yes
+No verification; no pricing; no submission
+6
+Social Value Statements
+£300–£900
+No
+Possibly
+Commitments become contractual obligations on award
+7
+Financial and Costed Business Case
+£300–£800
+No
+Unlikely
+No figure is calculated or checked
+8
+Accreditation Support
+£300–£700
+No
+Yes
+No warranty of accreditation; no competent person services
+9
+Evidence Bank Development
+£800–£2,000
+No
+Yes
+Content is theirs, structure is yours
+10
+Framework Applications
+£800–£2,500
+No
+Yes
+A place is not a call-off
+11
+Consortium Bid Coordination
+£900–£2,500
+No — use file 02
+Yes
+No advice on the consortium agreement or competition law
+12
+Contract Mobilisation
+£400–£1,200
+No
+Possibly
+No advice on contractual meaning or effect
+13
+Social Value Delivery Reporting
+£300–£600 per cycle
+No
+Yes
+Reports evidence supplied; delivers and verifies nothing
